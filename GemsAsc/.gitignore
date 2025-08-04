@@ -1,0 +1,14 @@
+﻿# Ignore Visual Studio folders and files
+.vs/
+*.user
+*.suo
+
+# Ignore compiled files and build output
+bin/
+obj/
+
+# Ignore NuGet packages (you can restore them via .sln)
+packages/
+
+# Ignore Web.config if you're using a template instead
+Web.config
