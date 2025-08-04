@@ -100,13 +100,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="About.aspx" />
     <Content Include="Assets\Images\Logo\aicte.png" />
     <Content Include="Assets\Images\Logo\gemslogo.png" />
     <Content Include="Assets\Images\Logo\naac.png" />
+    <Content Include="Assets\Images\principal.jpg" />
     <Content Include="Components\BannerSlider.ascx" />
+    <Content Include="Components\Footer.ascx" />
     <Content Include="Components\Navbar.ascx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Components\Statistics.ascx" />
+    <Content Include="Components\WelcomeSection.ascx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -193,13 +195,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Components\BannerSlider.ascx.cs">
       <DependentUpon>BannerSlider.ascx</DependentUpon>
@@ -208,6 +203,13 @@
     <Compile Include="Components\BannerSlider.ascx.designer.cs">
       <DependentUpon>BannerSlider.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Components\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Components\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,12 +217,19 @@
     <Compile Include="Components\Navbar.ascx.designer.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Components\Statistics.ascx.cs">
+      <DependentUpon>Statistics.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Components\Statistics.ascx.designer.cs">
+      <DependentUpon>Statistics.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\WelcomeSection.ascx.cs">
+      <DependentUpon>WelcomeSection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\WelcomeSection.ascx.designer.cs">
+      <DependentUpon>WelcomeSection.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

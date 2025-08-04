@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GemsAsc
+namespace GemsAsc.Components
 {
-    public partial class About : Page
+    public partial class Footer : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

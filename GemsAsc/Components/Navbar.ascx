@@ -1,9 +1,64 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="GemsAsc.Components.Navbar" %>
+﻿﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="GemsAsc.Components.Navbar" %>
+
+
+<style>
+    .collage-name {
+       font-family: 'Inter', Gadget, sans-serif;
+       color: #001c74;
+     }
+    .blink {
+      animation: blinker 2s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        color: #16704C;
+        background-color: white;
+      }
+    }
+    
+    /* Sticky bottom navbar */
+    .sticky-navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1040;
+    }
+    
+    /* Hide top part in small screen */
+    @media (max-width: 992px) {
+      .top-navbar {
+        display: none !important;
+      }
+    
+      .navbar {
+        background-color: white !important;
+      }
+    
+      .navbar-nav .nav-link {
+        color: #16704C !important;
+      }
+    
+      #menuToggle {
+        color: #16704C !important;
+      }
+    
+      .navbar-brand img {
+        filter: grayscale(100%);
+      }
+    }
+    
+    @media (min-width: 992px) {
+      #sideMenu {
+        display: none !important;
+      }
+    }
+</style>
+
 
 <!-- Top Navbar -->
 <div class="top-navbar bg-white border-bottom px-3 py-2 d-flex align-items-center justify-content-center flex-wrap gap-4">
   <div class="d-flex align-items-center">
-    <img src="../Assets/Images/Logo/gemslogo.png" alt="College Logo" height="100" class="me-3" />
+    <img src="../Assets/Images/Logo/gemslogo.png" alt="Gems Logo" height="100" class="me-3" />
     <div class="d-flex flex-column align-items-center collage-name">
       <h5 class="mb-0 fw-bold">GEMS ARTS AND SCIENCE COLLEGE</h5>
       <small class="text-muted fw-semibold">(AUTONOMOUS)</small>
@@ -12,8 +67,9 @@
 
   <div class="d-flex align-items-center gap-4">
     <button class="btn fw-bold blink me-3 text-white" style="background-color: #16704C;">Admission 2025-26</button>
-    <img src="../Assets/Images/Logo/naac.png" alt="Logo 2" width="80" class="me-2" />
-    <img src="../Assets/Images/Logo/aicte.png" alt="Logo 2" width="80"" />
+    <img src="../Assets/Images/Logo/naac.png" alt="Naac Logo" width="80" class="me-2" />
+    <img src="../Assets/Images/Logo/aicte.png" alt="Aicte Logo" width="80" class="me-2" />
+    <img src="../Assets/Images/Logo/ugc.png" alt="Ugc Logo" width="80" />
   </div>
 </div>
 
@@ -165,72 +221,18 @@
   </ul>     
 </div>
 
-<!-- Scripts -->
+
 <script>
 
-  const menuToggle = document.getElementById("menuToggle");
-  const sideMenu = document.getElementById("sideMenu");
-  const closeMenu = document.getElementById("closeMenu");
+    const menuToggle = document.getElementById("menuToggle");
+    const sideMenu = document.getElementById("sideMenu");
+    const closeMenu = document.getElementById("closeMenu");
 
-  menuToggle?.addEventListener("click", () => {
-    sideMenu.style.transform = "translateX(0%)";
-  });
+    menuToggle?.addEventListener("click", () => {
+        sideMenu.style.transform = "translateX(0%)";
+    });
 
-  closeMenu?.addEventListener("click", () => {
-    sideMenu.style.transform = "translateX(100%)";
-  });
+    closeMenu?.addEventListener("click", () => {
+        sideMenu.style.transform = "translateX(100%)";
+    });
 </script>
-
-<!-- Styles -->
-<style>
-  .collage-name {
-     font-family: 'Inter', Gadget, sans-serif;
-     color: #001c74;
-   }
-  .blink {
-    animation: blinker 2s linear infinite;
-  }
-
-  @keyframes blinker {
-    50% {
-      color: #16704C;
-      background-color: white;
-    }
-  }
-
-  /* Sticky bottom navbar */
-  .sticky-navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1040;
-  }
-
-  /* Hide top part in small screen */
-  @media (max-width: 991.98px) {
-    .top-navbar {
-      display: none !important;
-    }
-
-    .navbar {
-      background-color: white !important;
-    }
-
-    .navbar-nav .nav-link {
-      color: #16704C !important;
-    }
-
-    #menuToggle {
-      color: #16704C !important;
-    }
-
-    .navbar-brand img {
-      filter: grayscale(100%);
-    }
-  }
-
-  @media (min-width: 992px) {
-    #sideMenu {
-      display: none !important;
-    }
-  }
-</style>

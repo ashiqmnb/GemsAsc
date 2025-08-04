@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GemsAsc
+namespace GemsAsc.Components
 {
 
 
-    public partial class About
+    public partial class Footer
     {
     }
 }

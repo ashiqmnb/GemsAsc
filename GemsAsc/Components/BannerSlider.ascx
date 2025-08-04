@@ -1,50 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BannerSlider.ascx.cs" Inherits="GemsAsc.Components.BannerSlider" %>
 
 
-<div class="slider-container">
-    <div class="slider-wrapper" id="sliderWrapper">
-        <div class="slide">
-            <img src="../Assets/Images/Banner/homeimge2.webp" alt="Banner 1" />
-            <div class="slide-caption">
-                <h2>INNOVATIVE PROGRAMMES</h2>
-                <h5>GEMS provides various innovative programmes for the students to enrich their Social Commitment & Professional Quality.</h5>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="../Assets/Images/Banner/homeimge3.webp" alt="Banner 3" />
-            <div class="slide-caption">
-                <h2>GEMS LIBRARY</h2>
-                <h5>The Library has a collection of good number of books under different titles according to the student requirements with online public access & HighSpeed Internet Facility.</h5>
-            </div>
-        </div>
-         <div class="slide caption-div">
-             <img src="../Assets/Images/Banner/homeimge1.webp" alt="Banner 2" />
-         </div>
-    </div>
-
-</div>
-
-<script>
-    let currentIndex = 0;
-    const sliderWrapper = document.getElementById('sliderWrapper');
-    const slides = sliderWrapper.children;
-    const totalSlides = slides.length;
-
-    function updateSlide() {
-        const offset = -currentIndex * 100;
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-    }
-
-    function slideNext() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateSlide();
-    }
-
-    setInterval(() => {
-        slideNext();
-    }, 3000);
-</script>
-
 <style>
     .slider-container {
         position: relative;
@@ -116,3 +72,51 @@
 
     }
 </style>
+
+
+
+
+<div class="slider-container">
+    <div class="slider-wrapper" id="sliderWrapper">
+        <div class="slide">
+            <img src="../Assets/Images/Banner/homeimge2.webp" alt="Banner 1" />
+            <div class="slide-caption">
+                <h2>INNOVATIVE PROGRAMMES</h2>
+                <h5>GEMS provides various innovative programmes for the students to enrich their Social Commitment & Professional Quality.</h5>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="../Assets/Images/Banner/homeimge3.webp" alt="Banner 3" />
+            <div class="slide-caption">
+                <h2>GEMS LIBRARY</h2>
+                <h5>The Library has a collection of good number of books under different titles according to the student requirements with online public access & HighSpeed Internet Facility.</h5>
+            </div>
+        </div>
+         <div class="slide caption-div">
+             <img src="../Assets/Images/Banner/homeimge1.webp" alt="Banner 2" />
+         </div>
+    </div>
+</div>
+
+
+
+<script>
+    let currentIndex = 0;
+    const sliderWrapper = document.getElementById('sliderWrapper');
+    const slides = sliderWrapper.children;
+    const totalSlides = slides.length;
+
+    function updateSlide() {
+        const offset = -currentIndex * 100;
+        sliderWrapper.style.transform = `translateX(${offset}%)`;
+    }
+
+    function slideNext() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlide();
+    }
+
+    setInterval(() => {
+        slideNext();
+    }, 4000);
+</script>
