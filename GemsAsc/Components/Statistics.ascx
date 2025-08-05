@@ -4,6 +4,7 @@
     .main-div {
         display:flex;
         justify-content:center;
+        padding:40px 0px 60px 0px;
     }
 
     .counter-box {
@@ -28,7 +29,7 @@
 
     .counter-box i {
         font-size: 60px;
-        color: #A62846;
+        color: #16704C;
         text-align:center;
         padding-top:10px;
     }
@@ -36,7 +37,7 @@
     .counter-box h3 {
         font-size: 32px;
         font-weight: bold;
-        color: #A62846;
+        color: #16704C;
     }
 
     .counter-box p {
@@ -87,7 +88,7 @@
                     <div class="counter-box">
                         <i class="fa-solid fa-book-open"></i>
                         <div class="counter-box-child">
-                            <h3 class="counter" data-target="15">0</h3>
+                            <h3 class="counter" data-target="18">0</h3>
                             <p>Programmes</p>
                         </div>
                     </div>

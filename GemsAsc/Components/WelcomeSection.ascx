@@ -6,7 +6,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding: 40px 20px;
+        padding: 60px 20px;
         background-color: #fff;
         font-family: 'Segoe UI', sans-serif;
     }
@@ -56,7 +56,7 @@
     }
 
     .welcome-content a.read-more {
-        color: #aa1e2e;
+        color: #16704C;
         font-weight: 600;
         font-size: 16px;
         text-decoration: none;
@@ -88,7 +88,7 @@
 <div class="welcome-section">
 
     <div class="welcome-image">
-        <img src="../Assets/Images/principal.jpg" alt="Principal Image" />
+        <img src="../Assets/Images/People/principal.png" alt="Principal Image" />
         <div class="name-badge">
             <p style="margin-bottom: 0px; font-size:20px;">Dr. Naveen Mohan</p>
             <p style="margin-bottom: 0px; font-size:14px;">Principal</p>

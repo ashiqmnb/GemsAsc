@@ -100,13 +100,67 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="Assets\Images\Events\event1a.jpg" />
+    <Content Include="Assets\Images\Events\event1b.jpeg" />
+    <Content Include="Assets\Images\Events\event1c.jpeg" />
+    <Content Include="Assets\Images\Events\event1d.jpeg" />
+    <Content Include="Assets\Images\Events\event2a.jpg" />
+    <Content Include="Assets\Images\Events\event3a.jpg" />
+    <Content Include="Assets\Images\Events\event3b.jpg" />
+    <Content Include="Assets\Images\Events\event3c.jpg" />
+    <Content Include="Assets\Images\Events\event4a.jpg" />
+    <Content Include="Assets\Images\Events\event4b.jpg" />
+    <Content Include="Assets\Images\Events\event4c.jpg" />
+    <Content Include="Assets\Images\Events\event4d.jpg" />
+    <Content Include="Assets\Images\Gallary\galary1.png" />
+    <Content Include="Assets\Images\Gallary\galary10.png" />
+    <Content Include="Assets\Images\Gallary\galary11.png" />
+    <Content Include="Assets\Images\Gallary\galary12.png" />
+    <Content Include="Assets\Images\Gallary\galary13.png" />
+    <Content Include="Assets\Images\Gallary\galary14.jpg" />
+    <Content Include="Assets\Images\Gallary\galary15.jpeg" />
+    <Content Include="Assets\Images\Gallary\galary16.jpeg" />
+    <Content Include="Assets\Images\Gallary\galary17.jpeg" />
+    <Content Include="Assets\Images\Gallary\galary18.jpeg" />
+    <Content Include="Assets\Images\Gallary\galary19.jpeg" />
+    <Content Include="Assets\Images\Gallary\galary2.png" />
+    <Content Include="Assets\Images\Gallary\galary20.jpeg" />
+    <Content Include="Assets\Images\Gallary\galary3.png" />
+    <Content Include="Assets\Images\Gallary\galary4.png" />
+    <Content Include="Assets\Images\Gallary\galary5.png" />
+    <Content Include="Assets\Images\Gallary\galary6.png" />
+    <Content Include="Assets\Images\Gallary\galary7.png" />
+    <Content Include="Assets\Images\Gallary\galary8.png" />
+    <Content Include="Assets\Images\Gallary\galary9.png" />
     <Content Include="Assets\Images\Logo\aicte.png" />
     <Content Include="Assets\Images\Logo\gemslogo.png" />
     <Content Include="Assets\Images\Logo\naac.png" />
-    <Content Include="Assets\Images\principal.jpg" />
+    <Content Include="Assets\Images\People\principal.png" />
+    <Content Include="Assets\Images\Programes\baenglish.jpg" />
+    <Content Include="Assets\Images\Programes\bamultimedia.jpg" />
+    <Content Include="Assets\Images\Programes\bba.jpg" />
+    <Content Include="Assets\Images\Programes\bca.jpg" />
+    <Content Include="Assets\Images\Programes\bcomca.jpg" />
+    <Content Include="Assets\Images\Programes\bcomcop.jpg" />
+    <Content Include="Assets\Images\Programes\bcomfinance.jpg" />
+    <Content Include="Assets\Images\Programes\biotech.jpg" />
+    <Content Include="Assets\Images\Programes\bscgeology.jpg" />
+    <Content Include="Assets\Images\Programes\bscmicro.jpg" />
+    <Content Include="Assets\Images\Programes\bttm.jpg" />
+    <Content Include="Assets\Images\Programes\cs.jpg" />
+    <Content Include="Assets\Images\Programes\maenglish.jpg" />
+    <Content Include="Assets\Images\Programes\maths.jpg" />
+    <Content Include="Assets\Images\Programes\mcom.jpg" />
+    <Content Include="Assets\Images\Programes\mscbiotech.jpg" />
+    <Content Include="Assets\Images\Programes\mscgeology.jpg" />
+    <Content Include="Assets\Images\Programes\mscmicro.jpg" />
+    <Content Include="Assets\Images\Programes\msw.jpg" />
+    <Content Include="Assets\Images\Programes\socio.jpg" />
     <Content Include="Components\BannerSlider.ascx" />
     <Content Include="Components\Footer.ascx" />
     <Content Include="Components\Navbar.ascx" />
+    <Content Include="Components\Programmes.ascx" />
+    <Content Include="Components\RecentEvents.ascx" />
     <Content Include="Components\Statistics.ascx" />
     <Content Include="Components\WelcomeSection.ascx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -217,6 +271,20 @@
     <Compile Include="Components\Navbar.ascx.designer.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Components\Programmes.ascx.cs">
+      <DependentUpon>Programmes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\Programmes.ascx.designer.cs">
+      <DependentUpon>Programmes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\RecentEvents.ascx.cs">
+      <DependentUpon>RecentEvents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\RecentEvents.ascx.designer.cs">
+      <DependentUpon>RecentEvents.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Components\Statistics.ascx.cs">
       <DependentUpon>Statistics.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -242,6 +310,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\EventsRepo.cs" />
+    <Compile Include="Repositories\GallaryRepo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -268,7 +338,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Pages\" />
-    <Folder Include="Repositories\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>

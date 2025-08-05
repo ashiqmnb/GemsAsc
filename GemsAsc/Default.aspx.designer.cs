@@ -40,5 +40,23 @@ namespace GemsAsc
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::GemsAsc.Components.WelcomeSection WelcomeSection;
+
+        /// <summary>
+        /// RecentEvents1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::GemsAsc.Components.RecentEvents RecentEvents1;
+
+        /// <summary>
+        /// Programmes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::GemsAsc.Components.Programmes Programmes;
     }
 }
