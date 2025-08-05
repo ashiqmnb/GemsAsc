@@ -158,6 +158,7 @@
     <Content Include="Assets\Images\Programes\socio.jpg" />
     <Content Include="Components\BannerSlider.ascx" />
     <Content Include="Components\Footer.ascx" />
+    <Content Include="Components\GalleryComp.ascx" />
     <Content Include="Components\Navbar.ascx" />
     <Content Include="Components\Programmes.ascx" />
     <Content Include="Components\RecentEvents.ascx" />
@@ -263,6 +264,13 @@
     </Compile>
     <Compile Include="Components\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\GalleryComp.ascx.cs">
+      <DependentUpon>GalleryComp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\GalleryComp.ascx.designer.cs">
+      <DependentUpon>GalleryComp.ascx</DependentUpon>
     </Compile>
     <Compile Include="Components\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>

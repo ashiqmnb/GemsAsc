@@ -23,6 +23,7 @@
 
     .programmes-filter {
         display: flex;
+        justify-content: center;
         gap: 15px;
         flex-wrap: wrap;
     }
@@ -98,6 +99,16 @@
     @media (max-width: 576px) {
         .programme-card {
             width: 40%;
+        }
+
+        .programmes-heading {
+            font-size: 1.5rem;
+        }
+
+        .programmes-filter button {
+             font-size: 0.8rem;
+             height: 32px;
+             padding: 4px 10px;
         }
     }
 </style>

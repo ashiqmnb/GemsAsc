@@ -9,7 +9,7 @@
     .recent-events-heading {
         font-size: 2rem;
         font-weight: bold;
-        margin-bottom: 30px;
+        margin: 30px 0px;
         color: #16704C;
     }
 
@@ -66,6 +66,7 @@
         align-items: center;
         gap: 20px;
         flex-wrap: wrap;
+        margin-bottom: 50px;
     }
 
     .slider-buttons button {
@@ -97,12 +98,35 @@
         display: none;
     }
 
-    /* Responsive slider style */
+    .section-divider {
+        border: none;
+        border-top: 2px solid #16704C;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+
     @media (max-width: 768px) {
         .recent-events {
             position: relative;
             flex-wrap: nowrap;
             overflow: hidden;
+        }
+
+        .slider-buttons .nav-icon-btn {
+            padding: 6px;
+            width:32px;
+            height: 32px;
+            font-size: 1rem;
+            border-radius: 50%;
+        }
+
+        .slider-buttons button{
+             border: 2px solid #16704C;
+             padding: 16px 12px;
+             border-radius: 30px;
+             font-size: 0.8rem;
+             height: 32px;
         }
 
         .event-image {
@@ -122,10 +146,16 @@
         .nav-icon-btn {
             display: flex !important;
         }
+
+        .recent-events-heading {
+            font-size:1.5rem;
+        }
     }
 </style>
 
 <div class="recent-events-section">
+    <hr class="section-divider" />
+
     <div class="recent-events-heading">Recent Events</div>
 
     <div class="recent-events" id="mobileSlider">
@@ -158,6 +188,8 @@
             <i class="fas fa-chevron-right"></i>
         </button>
     </div>
+
+    <hr class="section-divider" />
 </div>
 
 <script>
@@ -190,4 +222,8 @@
     window.addEventListener("DOMContentLoaded", function () {
         showCard(currentCardIndex);
     });
+
+    setInterval(() => {
+        showNextCard();
+    }, 5000);
 </script>

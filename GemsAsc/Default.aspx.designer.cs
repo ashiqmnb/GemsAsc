@@ -15,13 +15,13 @@ namespace GemsAsc
     {
 
         /// <summary>
-        /// BannerSlider1 control.
+        /// BannerSlider control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::GemsAsc.Components.BannerSlider BannerSlider1;
+        protected global::GemsAsc.Components.BannerSlider BannerSlider;
 
         /// <summary>
         /// Statistics control.
@@ -42,15 +42,6 @@ namespace GemsAsc
         protected global::GemsAsc.Components.WelcomeSection WelcomeSection;
 
         /// <summary>
-        /// RecentEvents1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::GemsAsc.Components.RecentEvents RecentEvents1;
-
-        /// <summary>
         /// Programmes control.
         /// </summary>
         /// <remarks>
@@ -58,5 +49,23 @@ namespace GemsAsc
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::GemsAsc.Components.Programmes Programmes;
+
+        /// <summary>
+        /// RecentEvents control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::GemsAsc.Components.RecentEvents RecentEvents;
+
+        /// <summary>
+        /// GalleryComp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::GemsAsc.Components.GalleryComp GalleryComp;
     }
 }
