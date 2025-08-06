@@ -46,6 +46,9 @@
       .navbar-brand img {
         filter: grayscale(100%);
       }
+      #btnAdminLoginSm {
+          margin-top: 15px;
+      }
     }
     
     @media (min-width: 992px) {
@@ -53,6 +56,8 @@
         display: none !important;
       }
     }
+
+}
 </style>
 
 
@@ -67,7 +72,7 @@
   </div>
 
   <div class="d-flex align-items-center gap-4">
-    <button class="btn fw-bold blink me-3 text-white" style="background-color: #16704C;">Admission 2025-26</button>
+    <button class="btn fw-bold blink me-3 text-white" style="background-color: #16704C;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">Admission 2025-26</button>
     <img src="../Assets/Images/Logo/naac.png" alt="Naac Logo" width="80" class="me-2" />
     <img src="../Assets/Images/Logo/aicte.png" alt="Aicte Logo" width="80" class="me-2" />
     <img src="../Assets/Images/Logo/ugc.png" alt="Ugc Logo" width="80" />
@@ -85,24 +90,24 @@
 
       <div class="d-lg-none d-flex flex-column align-items-center collage-name">
         <h5 class="mb-0 fw-bold fs-6">GEMS ARTS AND SCIENCE COLLEGE</h5>
-        <small class="text-muted fw-semibold">(AUTONOMOUS)</small>
-       </div>
+            <small class="text-muted fw-semibold">(AUTONOMOUS)</small>
+           </div>
 
-      <div class="navbar-toggler text-white" id="menuToggle" role="button" tabindex="0">
-        <i class="bi bi-list fs-1"></i> 
-      </div>
+          <div class="navbar-toggler text-white" id="menuToggle" role="button" tabindex="0">
+            <i class="bi bi-list fs-1"></i> 
+          </div>
 
-    <div class="collapse navbar-collapse d-none d-lg-flex">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around text-white">
-        <li class="nav-item"><a class="nav-link text-white" runat="server" href="~/">Home</a></li>
+        <div class="collapse navbar-collapse d-none d-lg-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around text-white">
+            <li class="nav-item"><a class="nav-link text-white" runat="server" href="~/">Home</a></li>
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             About
           </a>
           <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-            <li><a class="dropdown-item" href="#">About College</a></li>
-            <li><a class="dropdown-item" href="#">Message</a></li>
+            <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("AboutUsRoute", null) %>">About College</a></li>
+            <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("MessageRoute", null) %>">Message</a></li>
             <li><a class="dropdown-item" href="#">Board of Directors</a></li>
             <li><a class="dropdown-item" href="#">Code of Conduct</a></li>
           </ul>
@@ -152,6 +157,7 @@
         <li class="nav-item"><a class="nav-link text-white" href="#">Placement Cell</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#">Events</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="<%= Page.GetRouteUrl("LoginRoute", null) %>">Login</a></li>
       </ul>
     </div>
   </div>
@@ -168,8 +174,8 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle text-dark" href="#" id="about2Dropdown" data-bs-toggle="dropdown" aria-expanded="false">About</a>
       <ul class="dropdown-menu" aria-labelledby="about2Dropdown">
-        <li><a class="dropdown-item" href="#">Aboout College</a></li>
-        <li><a class="dropdown-item" href="#">Message</a></li>
+        <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("AboutUsRoute", null) %>">Aboout College</a></li>
+        <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("MessageRoute", null) %>">Message</a></li>
         <li><a class="dropdown-item" href="#">Board of Directors</a></li>
         <li><a class="dropdown-item" href="#">Code of Conduct</a></li>
       </ul>
@@ -219,6 +225,8 @@
     <li class="nav-item"><a class="nav-link text-dark" href="#">Placement Cell</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#">Events</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#">Contact</a></li>
+    <li id="btnAdminLoginSm" class="nav-item"><a class="nav-link text-dark" href="../Admin/AdminLogin.aspx">Login</a></li>
+
   </ul>     
 </div>
 

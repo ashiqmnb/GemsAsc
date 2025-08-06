@@ -12,7 +12,6 @@ namespace GemsAsc.Repositories
         public string Description { get; set; }
         public DateTime Date { get; set; }
         public List<string> Images { get; set; }
-
     }
     public class EventsRepo
     {

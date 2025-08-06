@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GemsAsc.Components
+namespace GemsAsc.Pages
 {
 
 
-    public partial class Navbar
+    public partial class AboutUs
     {
     }
 }

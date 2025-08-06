@@ -13,6 +13,13 @@ namespace GemsAsc
             var settings = new FriendlyUrlSettings();
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
+
+
+            routes.MapPageRoute("AdminDashboardRoute", "Admin/Dashboard", "~/Admin/Pages/Dashboard.aspx");
+            routes.MapPageRoute("LoginRoute", "Login", "~/Admin/AdminLogin.aspx");
+
+            routes.MapPageRoute("AboutUsRoute", "AboutUs", "~/Pages/AboutUs.aspx");
+            routes.MapPageRoute("MessageRoute", "Message", "~/Pages/Message.aspx");
         }
     }
 }
