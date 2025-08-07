@@ -15,7 +15,7 @@ namespace GemsAsc.Repositories
 
             using (SqlConnection conn = DatabaseHelper.GetConnection())
             {
-                string query = "select * from Departments where Name = @deptName";
+                string query = "SELECT * FROM Departments WHERE Name = @deptName";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@deptName", name);
 
