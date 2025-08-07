@@ -97,6 +97,18 @@
     <Content Include="Admin\AdminLogin.aspx" />
     <Content Include="Admin\Pages\Dashboard.aspx" />
     <Content Include="Assets\Images\Banner\collageImg.jpg" />
+    <Content Include="Assets\Images\Directors\abdullamaster.jpeg" />
+    <Content Include="Assets\Images\Directors\advkunhali.png" />
+    <Content Include="Assets\Images\Directors\kamalahammed.png" />
+    <Content Include="Assets\Images\Directors\kunmuhammeddirector.png" />
+    <Content Include="Assets\Images\Directors\laila.png" />
+    <Content Include="Assets\Images\Directors\mohammedali.png" />
+    <Content Include="Assets\Images\Directors\mohdkutty.jpg" />
+    <Content Include="Assets\Images\Directors\pthamsadirector.png" />
+    <Content Include="Assets\Images\Directors\raveendran.png" />
+    <Content Include="Assets\Images\Directors\shameema.jpeg" />
+    <Content Include="Assets\Images\Directors\sinijahaaris.jpg" />
+    <Content Include="Assets\Images\Directors\vicechairman.jpg" />
     <Content Include="Assets\Images\Events\event1a.jpg" />
     <Content Include="Assets\Images\Events\event1b.jpeg" />
     <Content Include="Assets\Images\Events\event1c.jpeg" />
@@ -109,6 +121,10 @@
     <Content Include="Assets\Images\Events\event4b.jpg" />
     <Content Include="Assets\Images\Events\event4c.jpg" />
     <Content Include="Assets\Images\Events\event4d.jpg" />
+    <Content Include="Assets\Images\Faculties\asgar.png" />
+    <Content Include="Assets\Images\Faculties\asna.jpeg" />
+    <Content Include="Assets\Images\Faculties\raneesha.jpg" />
+    <Content Include="Assets\Images\Faculties\snadhya.jpg" />
     <Content Include="Assets\Images\Gallary\galary1.png" />
     <Content Include="Assets\Images\Gallary\galary10.png" />
     <Content Include="Assets\Images\Gallary\galary11.png" />
@@ -188,6 +204,9 @@
     <Content Include="Assets\Images\Banner\homeImge3.webp" />
     <Content Include="Admin\AdminMaster.Master" />
     <Content Include="Pages\AboutUs.aspx" />
+    <Content Include="Pages\BoardOfDirectors.aspx" />
+    <Content Include="Pages\CodeOfConduct.aspx" />
+    <Content Include="Pages\Department.aspx" />
     <Content Include="Pages\Message.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -313,6 +332,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DTOs\DepartmentDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -323,6 +343,27 @@
     <Compile Include="Pages\AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BoardOfDirectors.aspx.cs">
+      <DependentUpon>BoardOfDirectors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BoardOfDirectors.aspx.designer.cs">
+      <DependentUpon>BoardOfDirectors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CodeOfConduct.aspx.cs">
+      <DependentUpon>CodeOfConduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CodeOfConduct.aspx.designer.cs">
+      <DependentUpon>CodeOfConduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Message.aspx.cs">
       <DependentUpon>Message.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -331,7 +372,11 @@
       <DependentUpon>Message.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DatabaseHelper.cs" />
+    <Compile Include="Repositories\DepartmentRepo.cs" />
+    <Compile Include="Repositories\DirectorsRepo.cs" />
     <Compile Include="Repositories\EventsRepo.cs" />
+    <Compile Include="Repositories\FacultyRepo.cs" />
     <Compile Include="Repositories\GallaryRepo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

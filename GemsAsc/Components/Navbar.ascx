@@ -72,7 +72,13 @@
   </div>
 
   <div class="d-flex align-items-center gap-4">
-    <button class="btn fw-bold blink me-3 text-white" style="background-color: #16704C;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">Admission 2025-26</button>
+    <a href="https://digivista.gemsasc.ac.in/online-admission/#/sign-in"
+       target="_blank"
+       class="btn fw-bold blink me-3 text-white"
+       style="background-color: #16704C; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); text-decoration: none;">
+        Admission 2025-26
+    </a>
+
     <img src="../Assets/Images/Logo/naac.png" alt="Naac Logo" width="80" class="me-2" />
     <img src="../Assets/Images/Logo/aicte.png" alt="Aicte Logo" width="80" class="me-2" />
     <img src="../Assets/Images/Logo/ugc.png" alt="Ugc Logo" width="80" />
@@ -108,30 +114,28 @@
           <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
             <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("AboutUsRoute", null) %>">About College</a></li>
             <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("MessageRoute", null) %>">Message</a></li>
-            <li><a class="dropdown-item" href="#">Board of Directors</a></li>
-            <li><a class="dropdown-item" href="#">Code of Conduct</a></li>
+            <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("BoardOfDirectorsRoute", null) %>">Board of Directors</a></li>
+            <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("CodeOfConductRoute", null) %>">Code of Conduct</a></li>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" id="deptDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departments</a>
           <ul class="dropdown-menu" aria-labelledby="deptDropdown">
-            <li><a class="dropdown-item" href="#">Computer Science</a></li>
-            <li><a class="dropdown-item" href="#">Computer Applications</a></li>
-            <li><a class="dropdown-item" href="#">Biotechnology</a></li>
-            <li><a class="dropdown-item" href="#">Microbiology</a></li>
-            <li><a class="dropdown-item" href="#">Geology</a></li>
-            <li><a class="dropdown-item" href="#">Management Studies</a></li>
-            <li><a class="dropdown-item" href="#">Commerce</a></li>
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Languages</a></li>
-            <li><a class="dropdown-item" href="#">Physical Education</a></li>
-            <li><a class="dropdown-item" href="#"></a></li>
-            <li><a class="dropdown-item" href="#">Sociology</a></li>
-            <li><a class="dropdown-item" href="#">Computer Science</a></li>
-            <li><a class="dropdown-item" href="#">MultiMedia</a></li>
-            <li><a class="dropdown-item" href="#">Social Work</a></li>
-            <li><a class="dropdown-item" href="#">Travel & Tourism</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Computer Science" }) %>">Computer Science</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Computer Applications" }) %>">Computer Applications</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Biotechnology" }) %>">Biotechnology</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Microbiology" }) %>">Microbiology</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Geology" }) %>">Geology</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Management Studies" }) %>">Management Studies</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Commerce" }) %>">Commerce</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "English" }) %>">English</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Languages" }) %>">Languages</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Physical Education" }) %>">Physical Education</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Sociology" }) %>">Sociology</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "MultiMedia" }) %>">MultiMedia</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Social Work" }) %>">Social Work</a></li>
+             <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Travel and Tourism" }) %>">Travel & Tourism</a></li>
           </ul>
         </li>
 
@@ -169,37 +173,35 @@
   <button class="btn-close float-end mb-3" id="closeMenu"></button>
 
   <ul class="nav flex-column">
-    <li class="nav-item"><a class="nav-link text-dark" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="../Default.aspx">Home</a></li>
 
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle text-dark" href="#" id="about2Dropdown" data-bs-toggle="dropdown" aria-expanded="false">About</a>
       <ul class="dropdown-menu" aria-labelledby="about2Dropdown">
         <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("AboutUsRoute", null) %>">Aboout College</a></li>
         <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("MessageRoute", null) %>">Message</a></li>
-        <li><a class="dropdown-item" href="#">Board of Directors</a></li>
-        <li><a class="dropdown-item" href="#">Code of Conduct</a></li>
+        <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("BoardOfDirectorsRoute", null) %>">Board of Directors</a></li>
+        <li><a class="dropdown-item" href="<%= Page.GetRouteUrl("CodeOfConductRoute", null) %>">Code of Conduct</a></li>
       </ul>
     </li>
 
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle text-dark" id="dept2Dropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">Departments</a>
       <ul class="dropdown-menu" aria-labelledby="dept2Dropdown">
-        <li><a class="dropdown-item" href="#">Computer Science</a></li>
-        <li><a class="dropdown-item" href="#">Computer Applications</a></li>
-        <li><a class="dropdown-item" href="#">Biotechnology</a></li>
-        <li><a class="dropdown-item" href="#">Microbiology</a></li>
-        <li><a class="dropdown-item" href="#">Geology</a></li>
-        <li><a class="dropdown-item" href="#">Management Studies</a></li>
-        <li><a class="dropdown-item" href="#">Commerce</a></li>
-        <li><a class="dropdown-item" href="#">English</a></li>
-        <li><a class="dropdown-item" href="#">Languages</a></li>
-        <li><a class="dropdown-item" href="#">Physical Education</a></li>
-        <li><a class="dropdown-item" href="#"></a></li>
-        <li><a class="dropdown-item" href="#">Sociology</a></li>
-        <li><a class="dropdown-item" href="#">Computer Science</a></li>
-        <li><a class="dropdown-item" href="#">MultiMedia</a></li>
-        <li><a class="dropdown-item" href="#">Social Work</a></li>
-        <li><a class="dropdown-item" href="#">Travel & Tourism</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Computer Science" }) %>">Computer Science</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Computer Applications" }) %>">Computer Applications</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Biotechnology" }) %>">Biotechnology</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Microbiology" }) %>">Microbiology</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Geology" }) %>">Geology</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Management Studies" }) %>">Management Studies</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Commerce" }) %>">Commerce</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "English" }) %>">English</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Languages" }) %>">Languages</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Physical Education" }) %>">Physical Education</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Sociology" }) %>">Sociology</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "MultiMedia" }) %>">MultiMedia</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Social Work" }) %>">Social Work</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("DepartmentByNameRoute", new { name = "Travel and Tourism" }) %>">Travel & Tourism</a></li>
       </ul>
     </li>
 
@@ -220,7 +222,7 @@
       </ul>
     </li>
 
-    <li class="nav-item"><a class="nav-link " style="color: #16704C;" href="#">IQAC</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="#">IQAC</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#">Gallery</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#">Placement Cell</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#">Events</a></li>

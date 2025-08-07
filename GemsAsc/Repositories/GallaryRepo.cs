@@ -14,7 +14,7 @@ namespace GemsAsc.Repositories
     {
         List<Gallary> GallaryList = new List<Gallary>
         {
-            new Gallary { Title = "Interzone Performance", ImageUrl = "~/Assets/Images/Gallary/galary1.png"},
+            new Gallary { Title = "Interzone Performance", ImageUrl = "HOD, ASSISTANT PROFESSOR"},
             new Gallary { Title = "Interzone Performance", ImageUrl = "~/Assets/Images/Gallary/galary2.png"},
             new Gallary { Title = "Arts fest off stage", ImageUrl = "~/Assets/Images/Gallary/galary3.png"},
             new Gallary { Title = "Arts fest off stage", ImageUrl = "~/Assets/Images/Gallary/galary5.png"},
@@ -23,7 +23,7 @@ namespace GemsAsc.Repositories
             new Gallary { Title = "Union inauguration 2023-24", ImageUrl = "~/Assets/Images/Gallary/galary8.png"},
             new Gallary { Title = "Student protest against road accident", ImageUrl = "~/Assets/Images/Gallary/galary9.png"},
             new Gallary { Title = "Mehfil victory day celebration", ImageUrl = "~/Assets/Images/Gallary/galary10.png"},
-            new Gallary { Title = "Collage union magzine release 2023-34", ImageUrl = "~/Assets/Images/Gallary/galary11.png"},
+            new Gallary { Title = "College union magzine release 2023-24", ImageUrl = "~/Assets/Images/Gallary/galary11.png"},
             new Gallary { Title = "Teachers day celebration", ImageUrl = "~/Assets/Images/Gallary/galary12.png"},
             new Gallary { Title = "Food fest 2024", ImageUrl = "~/Assets/Images/Gallary/galary13.png"},
             new Gallary { Title = "Library and research centre", ImageUrl = "~/Assets/Images/Gallary/galary14.jpg"},

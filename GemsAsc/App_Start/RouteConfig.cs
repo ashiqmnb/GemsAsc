@@ -20,6 +20,11 @@ namespace GemsAsc
 
             routes.MapPageRoute("AboutUsRoute", "AboutUs", "~/Pages/AboutUs.aspx");
             routes.MapPageRoute("MessageRoute", "Message", "~/Pages/Message.aspx");
+            routes.MapPageRoute("BoardOfDirectorsRoute", "Directors-Board", "~/Pages/BoardOfDirectors.aspx");
+            routes.MapPageRoute("CodeOfConductRoute", "Code-Of-Conduct", "~/Pages/CodeOfConduct.aspx");
+
+            routes.MapPageRoute("DepartmentByNameRoute", "Department/{name}", "~/Pages/Department.aspx");
+
         }
     }
 }
