@@ -1,16 +1,11 @@
-﻿using System;
+﻿using GemsAsc.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace GemsAsc.Repositories
 {
-    public class Faculty
-    {
-        public string Name { get; set; }
-        public string Designation { get; set; }
-        public string ImageUrl { get; set; }
-    }
     public class FacultyRepo
     {
         List<Faculty> FacultyList = new List<Faculty>

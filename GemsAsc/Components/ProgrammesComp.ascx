@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Programmes.ascx.cs" Inherits="GemsAsc.Components.Programmes" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ProgrammesComp.ascx.cs" Inherits="GemsAsc.Components.Programmes" %>
 
 <style>
     .programmes-section {

@@ -18,12 +18,19 @@ namespace GemsAsc
             routes.MapPageRoute("AdminDashboardRoute", "Admin/Dashboard", "~/Admin/Pages/Dashboard.aspx");
             routes.MapPageRoute("LoginRoute", "Login", "~/Admin/AdminLogin.aspx");
 
-            routes.MapPageRoute("AboutUsRoute", "AboutUs", "~/Pages/AboutUs.aspx");
-            routes.MapPageRoute("MessageRoute", "Message", "~/Pages/Message.aspx");
-            routes.MapPageRoute("BoardOfDirectorsRoute", "Directors-Board", "~/Pages/BoardOfDirectors.aspx");
-            routes.MapPageRoute("CodeOfConductRoute", "Code-Of-Conduct", "~/Pages/CodeOfConduct.aspx");
+            routes.MapPageRoute("AboutUsRoute", "AboutUs", "~/Pages/About/AboutUs.aspx");
+            routes.MapPageRoute("MessageRoute", "Message", "~/Pages/About/Message.aspx");
+            routes.MapPageRoute("BoardOfDirectorsRoute", "Directors-Board", "~/Pages/About/BoardOfDirectors.aspx");
+            routes.MapPageRoute("CodeOfConductRoute", "Code-Of-Conduct", "~/Pages/About/CodeOfConduct.aspx");
 
             routes.MapPageRoute("DepartmentByNameRoute", "Department/{name}", "~/Pages/Department.aspx");
+
+            routes.MapPageRoute("AcademicCalendarRoute", "Academic-Calendar", "~/Pages/Academics/AcademicCalendar.aspx");
+            routes.MapPageRoute("ProgrammesRoute", "Programmes", "~/Pages/Academics/Programmes.aspx");
+
+            routes.MapPageRoute("SportsRoute", "Facilities-Sports", "~/Pages/Facilities/Sports.aspx");
+            routes.MapPageRoute("LearningsRoute", "Facilities-Learnings", "~/Pages/Facilities/Learnings.aspx");
+            routes.MapPageRoute("AmenitiesRoute", "Facilities-Amenities", "~/Pages/Facilities/Amenities.aspx");
 
         }
     }

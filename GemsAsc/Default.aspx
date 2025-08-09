@@ -3,7 +3,7 @@
 <%@ Register TagPrefix="uc" TagName="Statistics" Src="~/Components/Statistics.ascx" %>
 <%@ Register TagPrefix="uc" TagName="WelcomeSection"  Src="~/Components/WelcomeSection.ascx" %>
 <%@ Register Src="~/Components/RecentEvents.ascx" TagPrefix="uc" TagName="RecentEvents" %>
-<%@ Register Src="~/Components/Programmes.ascx" TagPrefix="uc" TagName="Programmes" %>
+<%@ Register Src="~/Components/ProgrammesComp.ascx" TagPrefix="uc" TagName="Programmes" %>
 <%@ Register Src="~/Components/GalleryComp.ascx" TagPrefix="uc" TagName="GalleryComp" %>
 
 

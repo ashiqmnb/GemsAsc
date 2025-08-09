@@ -1,20 +1,16 @@
-﻿using System;
+﻿using GemsAsc.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace GemsAsc.Repositories
 {
-    public class Gallary
-    {
-        public string Title { get; set; }
-        public string ImageUrl { get; set; }
-    }
     public class GallaryRepo
     {
         List<Gallary> GallaryList = new List<Gallary>
         {
-            new Gallary { Title = "Interzone Performance", ImageUrl = "HOD, ASSISTANT PROFESSOR"},
+            new Gallary { Title = "Interzone Performance", ImageUrl = "~/Assets/Images/Gallary/galary1.png"},
             new Gallary { Title = "Interzone Performance", ImageUrl = "~/Assets/Images/Gallary/galary2.png"},
             new Gallary { Title = "Arts fest off stage", ImageUrl = "~/Assets/Images/Gallary/galary3.png"},
             new Gallary { Title = "Arts fest off stage", ImageUrl = "~/Assets/Images/Gallary/galary5.png"},

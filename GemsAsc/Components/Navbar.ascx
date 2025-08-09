@@ -142,20 +142,19 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" id="academicsDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
           <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
-            <li><a class="dropdown-item" href="#">Academic Calendar</a></li>
-            <li><a class="dropdown-item" href="#">Programmes</a></li>
+            <li><a class="dropdown-item" href="<%= GetRouteUrl("AcademicCalendarRoute", null) %>">Academic Calendar</a></li>
+            <li><a class="dropdown-item" href="<%= GetRouteUrl("ProgrammesRoute", null)%>">Programmes</a></li>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" id="facilitiesDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Facilities</a>
           <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
-            <li><a class="dropdown-item" href="#">Experiential Learning Cernters</a></li>
-            <li><a class="dropdown-item" href="#">Sports</a></li>
-            <li><a class="dropdown-item" href="#">Amenities</a></li>
+            <li><a class="dropdown-item" href="<%= GetRouteUrl("SportsRoute", null)%>">Sports</a></li>
+            <li><a class="dropdown-item" href="<%= GetRouteUrl("AmenitiesRoute", null)%>">Amenities</a></li>
+            <li><a class="dropdown-item" href="<%= GetRouteUrl("LearningsRoute", null)%>">Experiential Learning Cernters</a></li>
           </ul>
         </li>
-
         <li class="nav-item"><a class="nav-link text-white" href="#">IQAC</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#">Gallery</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#">Placement Cell</a></li>
@@ -208,17 +207,17 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle text-dark" id="academics2Dropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
       <ul class="dropdown-menu" aria-labelledby="academics2Dropdown">
-        <li><a class="dropdown-item" href="#">Academic Calendar</a></li>
-        <li><a class="dropdown-item" href="#">Programmes</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("AcademicCalendarRoute", null) %>">Academic Calendar</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("ProgrammesRoute", null) %>">Programmes</a></li>
       </ul>
     </li>
 
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle text-dark" id="facilities2Dropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">Facilities</a>
       <ul class="dropdown-menu" aria-labelledby="facilities2Dropdown">
-        <li><a class="dropdown-item" href="#">Experiential Learning Cernters</a></li>
-        <li><a class="dropdown-item" href="#">Sports</a></li>
-        <li><a class="dropdown-item" href="#">Amenities</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("SportsRoute", null)%>">Sports</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("AmenitiesRoute", null)%>">Amenities</a></li>
+        <li><a class="dropdown-item" href="<%= GetRouteUrl("LearningsRoute", null)%>">Experiential Learning Cernters</a></li>
       </ul>
     </li>
 

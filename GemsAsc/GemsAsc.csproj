@@ -121,6 +121,28 @@
     <Content Include="Assets\Images\Events\event4b.jpg" />
     <Content Include="Assets\Images\Events\event4c.jpg" />
     <Content Include="Assets\Images\Events\event4d.jpg" />
+    <Content Include="Assets\Images\Facilities\Amenities\cafeteria.jpeg" />
+    <Content Include="Assets\Images\Facilities\Amenities\energy.jpg" />
+    <Content Include="Assets\Images\Facilities\Amenities\hostel.jpg" />
+    <Content Include="Assets\Images\Facilities\Amenities\library.jpg" />
+    <Content Include="Assets\Images\Facilities\Amenities\openair.jpg" />
+    <Content Include="Assets\Images\Facilities\Amenities\theature.jpeg" />
+    <Content Include="Assets\Images\Facilities\Amenities\transportation.jpg" />
+    <Content Include="Assets\Images\Facilities\Learning\audiolab.jpg" />
+    <Content Include="Assets\Images\Facilities\Learning\centrallab.jpeg" />
+    <Content Include="Assets\Images\Facilities\Learning\cslab.jpg" />
+    <Content Include="Assets\Images\Facilities\Learning\electronicslab.jpg" />
+    <Content Include="Assets\Images\Facilities\Learning\geolab.jpeg" />
+    <Content Include="Assets\Images\Facilities\Learning\geomuseum.jpg" />
+    <Content Include="Assets\Images\Facilities\Learning\multimedialab.jpg" />
+    <Content Include="Assets\Images\Facilities\Learning\ugbiotechlab.jpg" />
+    <Content Include="Assets\Images\Facilities\Learning\ugmicrolab.jpeg" />
+    <Content Include="Assets\Images\Facilities\Sports\badminton.jpeg" />
+    <Content Include="Assets\Images\Facilities\Sports\basketball.jpg" />
+    <Content Include="Assets\Images\Facilities\Sports\cricket.jpeg" />
+    <Content Include="Assets\Images\Facilities\Sports\football.jpeg" />
+    <Content Include="Assets\Images\Facilities\Sports\ground.jpeg" />
+    <Content Include="Assets\Images\Facilities\Sports\vollyball.jpeg" />
     <Content Include="Assets\Images\Faculties\asgar.png" />
     <Content Include="Assets\Images\Faculties\asna.jpeg" />
     <Content Include="Assets\Images\Faculties\raneesha.jpg" />
@@ -175,7 +197,7 @@
     <Content Include="Components\Footer.ascx" />
     <Content Include="Components\GalleryComp.ascx" />
     <Content Include="Components\Navbar.ascx" />
-    <Content Include="Components\Programmes.ascx" />
+    <Content Include="Components\ProgrammesComp.ascx" />
     <Content Include="Components\RecentEvents.ascx" />
     <Content Include="Components\Statistics.ascx" />
     <Content Include="Components\WelcomeSection.ascx" />
@@ -203,17 +225,25 @@
     <Content Include="Assets\Images\Banner\homeImge2.webp" />
     <Content Include="Assets\Images\Banner\homeImge3.webp" />
     <Content Include="Admin\AdminMaster.Master" />
-    <Content Include="Pages\AboutUs.aspx" />
-    <Content Include="Pages\BoardOfDirectors.aspx" />
-    <Content Include="Pages\CodeOfConduct.aspx" />
+    <Content Include="Pages\About\AboutUs.aspx" />
+    <Content Include="Pages\Academics\AcademicCalendar.aspx" />
+    <Content Include="Pages\About\BoardOfDirectors.aspx" />
+    <Content Include="Pages\About\CodeOfConduct.aspx" />
     <Content Include="Pages\Department.aspx" />
-    <Content Include="Pages\Message.aspx" />
+    <Content Include="Pages\Facilities\Amenities.aspx" />
+    <Content Include="Pages\Facilities\Learnings.aspx" />
+    <Content Include="Pages\Facilities\Sports.aspx" />
+    <Content Include="Pages\About\Message.aspx" />
+    <Content Include="Pages\Academics\Programmes.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Assets\AcademicCalendar\ac2021-22.pdf" />
+    <Content Include="Assets\AcademicCalendar\ac2022-23.pdf" />
+    <Content Include="Assets\AcademicCalendar\ac2023-24.pdf" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -297,12 +327,12 @@
     <Compile Include="Components\Navbar.ascx.designer.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Components\Programmes.ascx.cs">
-      <DependentUpon>Programmes.ascx</DependentUpon>
+    <Compile Include="Components\ProgrammesComp.ascx.cs">
+      <DependentUpon>ProgrammesComp.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Components\Programmes.ascx.designer.cs">
-      <DependentUpon>Programmes.ascx</DependentUpon>
+    <Compile Include="Components\ProgrammesComp.ascx.designer.cs">
+      <DependentUpon>ProgrammesComp.ascx</DependentUpon>
     </Compile>
     <Compile Include="Components\RecentEvents.ascx.cs">
       <DependentUpon>RecentEvents.ascx</DependentUpon>
@@ -336,25 +366,35 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AboutUs.aspx.cs">
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\Faculty.cs" />
+    <Compile Include="Models\Gallary.cs" />
+    <Compile Include="Pages\About\AboutUs.aspx.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\AboutUs.aspx.designer.cs">
+    <Compile Include="Pages\About\AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BoardOfDirectors.aspx.cs">
+    <Compile Include="Pages\Academics\AcademicCalendar.aspx.cs">
+      <DependentUpon>AcademicCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Academics\AcademicCalendar.aspx.designer.cs">
+      <DependentUpon>AcademicCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\About\BoardOfDirectors.aspx.cs">
       <DependentUpon>BoardOfDirectors.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\BoardOfDirectors.aspx.designer.cs">
+    <Compile Include="Pages\About\BoardOfDirectors.aspx.designer.cs">
       <DependentUpon>BoardOfDirectors.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\CodeOfConduct.aspx.cs">
+    <Compile Include="Pages\About\CodeOfConduct.aspx.cs">
       <DependentUpon>CodeOfConduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\CodeOfConduct.aspx.designer.cs">
+    <Compile Include="Pages\About\CodeOfConduct.aspx.designer.cs">
       <DependentUpon>CodeOfConduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Department.aspx.cs">
@@ -364,18 +404,47 @@
     <Compile Include="Pages\Department.aspx.designer.cs">
       <DependentUpon>Department.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Message.aspx.cs">
+    <Compile Include="Pages\Facilities\Amenities.aspx.cs">
+      <DependentUpon>Amenities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Facilities\Amenities.aspx.designer.cs">
+      <DependentUpon>Amenities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Facilities\Learnings.aspx.cs">
+      <DependentUpon>Learnings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Facilities\Learnings.aspx.designer.cs">
+      <DependentUpon>Learnings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Facilities\Sports.aspx.cs">
+      <DependentUpon>Sports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Facilities\Sports.aspx.designer.cs">
+      <DependentUpon>Sports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\About\Message.aspx.cs">
       <DependentUpon>Message.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Message.aspx.designer.cs">
+    <Compile Include="Pages\About\Message.aspx.designer.cs">
       <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Academics\Programmes.aspx.cs">
+      <DependentUpon>Programmes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Academics\Programmes.aspx.designer.cs">
+      <DependentUpon>Programmes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\DatabaseHelper.cs" />
     <Compile Include="Repositories\DepartmentRepo.cs" />
     <Compile Include="Repositories\DirectorsRepo.cs" />
     <Compile Include="Repositories\EventsRepo.cs" />
+    <Compile Include="Repositories\FacilityRepo.cs" />
     <Compile Include="Repositories\FacultyRepo.cs" />
     <Compile Include="Repositories\GallaryRepo.cs" />
     <Compile Include="Site.Master.cs">
@@ -402,7 +471,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
