@@ -32,6 +32,8 @@ namespace GemsAsc
             routes.MapPageRoute("LearningsRoute", "Facilities-Learnings", "~/Pages/Facilities/Learnings.aspx");
             routes.MapPageRoute("AmenitiesRoute", "Facilities-Amenities", "~/Pages/Facilities/Amenities.aspx");
 
+            routes.MapPageRoute("IqacRoute", "IQAC", "~/Pages/IQAC.aspx");
+
         }
     }
 }

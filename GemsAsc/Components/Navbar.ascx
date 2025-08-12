@@ -155,7 +155,7 @@
             <li><a class="dropdown-item" href="<%= GetRouteUrl("LearningsRoute", null)%>">Experiential Learning Cernters</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">IQAC</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="<%= GetRouteUrl("IqacRoute", null)%>">IQAC</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#">Gallery</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#">Placement Cell</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#">Events</a></li>
@@ -221,7 +221,7 @@
       </ul>
     </li>
 
-    <li class="nav-item"><a class="nav-link text-dark" href="#">IQAC</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="<%= GetRouteUrl("IqacRoute", null)%>">IQAC</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#">Gallery</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#">Placement Cell</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#">Events</a></li>

@@ -167,6 +167,22 @@
     <Content Include="Assets\Images\Gallary\galary7.png" />
     <Content Include="Assets\Images\Gallary\galary8.png" />
     <Content Include="Assets\Images\Gallary\galary9.png" />
+    <Content Include="Assets\Images\IQAC\afroza.jpeg" />
+    <Content Include="Assets\Images\IQAC\amrtha.jpeg" />
+    <Content Include="Assets\Images\IQAC\anitha.jpeg" />
+    <Content Include="Assets\Images\IQAC\anoos.png" />
+    <Content Include="Assets\Images\IQAC\arathy.jpg" />
+    <Content Include="Assets\Images\IQAC\binshad.jpeg" />
+    <Content Include="Assets\Images\IQAC\finose.jpeg" />
+    <Content Include="Assets\Images\IQAC\jayashree.png" />
+    <Content Include="Assets\Images\IQAC\lecture.jpg" />
+    <Content Include="Assets\Images\IQAC\rahman.png" />
+    <Content Include="Assets\Images\IQAC\ranjusha.jpg" />
+    <Content Include="Assets\Images\IQAC\resna.png" />
+    <Content Include="Assets\Images\IQAC\sandeepan.png" />
+    <Content Include="Assets\Images\IQAC\seethal.jpeg" />
+    <Content Include="Assets\Images\IQAC\shahulhameed.jpg" />
+    <Content Include="Assets\Images\IQAC\sivakumar.jpg" />
     <Content Include="Assets\Images\Logo\aicte.png" />
     <Content Include="Assets\Images\Logo\gemslogo.png" />
     <Content Include="Assets\Images\Logo\naac.png" />
@@ -196,6 +212,10 @@
     <Content Include="Components\BannerSlider.ascx" />
     <Content Include="Components\Footer.ascx" />
     <Content Include="Components\GalleryComp.ascx" />
+    <Content Include="Components\IQAC\Composition.ascx" />
+    <Content Include="Components\IQAC\ObjectivesFunctions.ascx" />
+    <Content Include="Components\IQAC\QualityInitiatives.ascx" />
+    <Content Include="Components\IQAC\QualityPolicies.ascx" />
     <Content Include="Components\Navbar.ascx" />
     <Content Include="Components\ProgrammesComp.ascx" />
     <Content Include="Components\RecentEvents.ascx" />
@@ -235,6 +255,7 @@
     <Content Include="Pages\Facilities\Sports.aspx" />
     <Content Include="Pages\About\Message.aspx" />
     <Content Include="Pages\Academics\Programmes.aspx" />
+    <Content Include="Pages\IQAC.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -319,6 +340,34 @@
     </Compile>
     <Compile Include="Components\GalleryComp.ascx.designer.cs">
       <DependentUpon>GalleryComp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\IQAC\Composition.ascx.cs">
+      <DependentUpon>Composition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\IQAC\Composition.ascx.designer.cs">
+      <DependentUpon>Composition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\IQAC\ObjectivesFunctions.ascx.cs">
+      <DependentUpon>ObjectivesFunctions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\IQAC\ObjectivesFunctions.ascx.designer.cs">
+      <DependentUpon>ObjectivesFunctions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\IQAC\QualityInitiatives.ascx.cs">
+      <DependentUpon>QualityInitiatives.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\IQAC\QualityInitiatives.ascx.designer.cs">
+      <DependentUpon>QualityInitiatives.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\IQAC\QualityPolicies.ascx.cs">
+      <DependentUpon>QualityPolicies.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\IQAC\QualityPolicies.ascx.designer.cs">
+      <DependentUpon>QualityPolicies.ascx</DependentUpon>
     </Compile>
     <Compile Include="Components\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
@@ -438,6 +487,13 @@
     </Compile>
     <Compile Include="Pages\Academics\Programmes.aspx.designer.cs">
       <DependentUpon>Programmes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\IQAC.aspx.cs">
+      <DependentUpon>IQAC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\IQAC.aspx.designer.cs">
+      <DependentUpon>IQAC.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\DatabaseHelper.cs" />

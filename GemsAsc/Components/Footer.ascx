@@ -96,7 +96,7 @@
             <!-- Right Column -->
             <div class="col-md-4 mb-4">
                 <h5>Contact Us</h5>
-                <p>GEMS, Kadungapuram P.O, Kallapuram, Malappuram</p>
+                <p>GEMS, Kadungapuram P.O, Ramapuram, Malappuram</p>
                 <p><i class="fas fa-phone-alt"></i> 04933 256XXX</p>
                 <p><i class="fas fa-envelope"></i> gemsasc@gmail.com</p>
                 <p><i class="fas fa-envelope"></i> principal@gemscollege.ac.in</p>
