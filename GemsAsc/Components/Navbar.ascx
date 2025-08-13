@@ -156,10 +156,8 @@
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link text-white" href="<%= GetRouteUrl("IqacRoute", null)%>">IQAC</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Placement Cell</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Events</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="<%= GetRouteUrl("GalleryRoute", null)%>">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="<%= GetRouteUrl("EventsRoute", null)%>">Events</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="<%= Page.GetRouteUrl("LoginRoute", null) %>">Login</a></li>
       </ul>
     </div>
@@ -222,12 +220,10 @@
     </li>
 
     <li class="nav-item"><a class="nav-link text-dark" href="<%= GetRouteUrl("IqacRoute", null)%>">IQAC</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="#">Gallery</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="#">Placement Cell</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="#">Events</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="#">Contact</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="<%= GetRouteUrl("GalleryRoute", null)%>">Gallery</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="<%= GetRouteUrl("EventsRoute", null)%>">Events</a></li>
     <li id="btnAdminLoginSm" class="nav-item"><a class="nav-link text-dark" href="../Admin/AdminLogin.aspx">Login</a></li>
-
+    
   </ul>     
 </div>
 

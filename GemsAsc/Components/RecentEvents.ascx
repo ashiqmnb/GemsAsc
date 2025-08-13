@@ -179,9 +179,11 @@
         </button>
 
         <!-- Always Visible Center Button -->
-        <button type="button">
-            View All Events
-        </button>
+        <a href="<%= GetRouteUrl("EventsRoute", null)%>" style="text-decoration: none;">
+            <button type="button">
+                View All Events
+            </button>
+        </a>
 
         <!-- Next Icon (only on small screens) -->
         <button type="button" class="nav-icon-btn" onclick="showNextCard()">

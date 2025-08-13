@@ -250,11 +250,13 @@
     <Content Include="Pages\About\BoardOfDirectors.aspx" />
     <Content Include="Pages\About\CodeOfConduct.aspx" />
     <Content Include="Pages\Department.aspx" />
+    <Content Include="Pages\Events.aspx" />
     <Content Include="Pages\Facilities\Amenities.aspx" />
     <Content Include="Pages\Facilities\Learnings.aspx" />
     <Content Include="Pages\Facilities\Sports.aspx" />
     <Content Include="Pages\About\Message.aspx" />
     <Content Include="Pages\Academics\Programmes.aspx" />
+    <Content Include="Pages\GalleryPage.aspx" />
     <Content Include="Pages\IQAC.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -453,6 +455,13 @@
     <Compile Include="Pages\Department.aspx.designer.cs">
       <DependentUpon>Department.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Facilities\Amenities.aspx.cs">
       <DependentUpon>Amenities.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -487,6 +496,13 @@
     </Compile>
     <Compile Include="Pages\Academics\Programmes.aspx.designer.cs">
       <DependentUpon>Programmes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GalleryPage.aspx.cs">
+      <DependentUpon>GalleryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GalleryPage.aspx.designer.cs">
+      <DependentUpon>GalleryPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\IQAC.aspx.cs">
       <DependentUpon>IQAC.aspx</DependentUpon>

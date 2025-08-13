@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Claysys Training\\GemsAsc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|D:\\Claysys Training\\GemsAsc\\gemsasc\\pages\\iqac.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\iqac.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\repositories\\eventsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\repositories\\eventsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\components\\iqac\\qualityinitiatives.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\components\\iqac\\qualityinitiatives.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\components\\recentevents.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\components\\recentevents.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\components\\iqac\\objectivesfunctions.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\components\\iqac\\objectivesfunctions.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\pages\\events.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\events.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|D:\\Claysys Training\\GemsAsc\\gemsasc\\pages\\iqac.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\iqac.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\pages\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\components\\recentevents.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\components\\recentevents.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,77 +29,94 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 2046,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 1588,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QualityInitiatives.ascx",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Components\\IQAC\\QualityInitiatives.ascx",
-              "RelativeDocumentMoniker": "GemsAsc\\Components\\IQAC\\QualityInitiatives.ascx",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Components\\IQAC\\QualityInitiatives.ascx",
-              "RelativeToolTip": "GemsAsc\\Components\\IQAC\\QualityInitiatives.ascx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
-              "WhenOpened": "2025-08-12T09:32:05.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IQAC.aspx",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\IQAC.aspx",
-              "RelativeDocumentMoniker": "GemsAsc\\Pages\\IQAC.aspx",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\IQAC.aspx",
-              "RelativeToolTip": "GemsAsc\\Pages\\IQAC.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-08-12T04:37:05.616Z",
+              "DocumentIndex": 2,
+              "Title": "Events.aspx.cs",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Events.aspx.cs",
+              "RelativeDocumentMoniker": "GemsAsc\\Pages\\Events.aspx.cs",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Events.aspx.cs",
+              "RelativeToolTip": "GemsAsc\\Pages\\Events.aspx.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T09:15:26.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IQAC.aspx.cs",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\IQAC.aspx.cs",
-              "RelativeDocumentMoniker": "GemsAsc\\Pages\\IQAC.aspx.cs",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\IQAC.aspx.cs",
-              "RelativeToolTip": "GemsAsc\\Pages\\IQAC.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
+              "Title": "Events.aspx",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Events.aspx",
+              "RelativeDocumentMoniker": "GemsAsc\\Pages\\Events.aspx",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Events.aspx",
+              "RelativeToolTip": "GemsAsc\\Pages\\Events.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-13T07:37:57.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventsRepo.cs",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\EventsRepo.cs",
+              "RelativeDocumentMoniker": "GemsAsc\\Repositories\\EventsRepo.cs",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\EventsRepo.cs",
+              "RelativeToolTip": "GemsAsc\\Repositories\\EventsRepo.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAgwMkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T04:39:12.012Z",
+              "WhenOpened": "2025-08-13T09:10:09.771Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 1186,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 1690,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ObjectivesFunctions.ascx",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Components\\IQAC\\ObjectivesFunctions.ascx",
-              "RelativeDocumentMoniker": "GemsAsc\\Components\\IQAC\\ObjectivesFunctions.ascx",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Components\\IQAC\\ObjectivesFunctions.ascx",
-              "RelativeToolTip": "GemsAsc\\Components\\IQAC\\ObjectivesFunctions.ascx",
+              "DocumentIndex": 4,
+              "Title": "RecentEvents.ascx",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Components\\RecentEvents.ascx",
+              "RelativeDocumentMoniker": "GemsAsc\\Components\\RecentEvents.ascx",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Components\\RecentEvents.ascx",
+              "RelativeToolTip": "GemsAsc\\Components\\RecentEvents.ascx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
-              "WhenOpened": "2025-08-12T09:17:12.119Z",
+              "WhenOpened": "2025-08-13T09:11:30.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RecentEvents.ascx.cs",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Components\\RecentEvents.ascx.cs",
+              "RelativeDocumentMoniker": "GemsAsc\\Components\\RecentEvents.ascx.cs",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Components\\RecentEvents.ascx.cs",
+              "RelativeToolTip": "GemsAsc\\Components\\RecentEvents.ascx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T09:14:51.454Z",
               "EditorCaption": ""
             }
           ]

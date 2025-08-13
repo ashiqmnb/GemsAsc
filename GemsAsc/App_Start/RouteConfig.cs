@@ -34,6 +34,10 @@ namespace GemsAsc
 
             routes.MapPageRoute("IqacRoute", "IQAC", "~/Pages/IQAC.aspx");
 
+            routes.MapPageRoute("GalleryRoute", "Gallery", "~/Pages/GalleryPage.aspx");
+
+            routes.MapPageRoute("EventsRoute", "Events", "~/Pages/Events.aspx");
+
         }
     }
 }

@@ -7,9 +7,9 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
-namespace GemsAsc.Components
+namespace GemsAsc.Pages
 {
-    public partial class GalleryComp : System.Web.UI.UserControl
+    public partial class GalleryPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,7 +22,7 @@ namespace GemsAsc.Components
         private void LoadGallery()
         {
             var repository = new GallaryRepo();
-            var items = repository.GetItemsForHome();
+            var items = repository.GetAllGalaryItems();
 
             foreach (var item in items)
             {
@@ -42,11 +42,9 @@ namespace GemsAsc.Components
                 wrapper.Controls.Add(img);
                 wrapper.Controls.Add(overlay);
 
-               
+
                 galleryContainer.Controls.Add(wrapper);
             }
         }
-
-
     }
 }

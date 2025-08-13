@@ -6,9 +6,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GemsAsc.Components
+namespace GemsAsc.Pages
 {
-    public partial class RecentEvents : System.Web.UI.UserControl
+    public partial class Events : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,7 +21,7 @@ namespace GemsAsc.Components
         private void BindEvents()
         {
             var eventRepo = new EventsRepo();
-            var events = eventRepo.GetAllEventsForHome();
+            var events = eventRepo.GetAllEvents();
 
             var eventViewModels = events.Select(ev => new
             {
