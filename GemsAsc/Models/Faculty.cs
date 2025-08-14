@@ -5,7 +5,7 @@ using System.Web;
 
 namespace GemsAsc.Models
 {
-    public class Faculty
+    public class FacultyDTO
     {
         public string Name { get; set; }
         public string Designation { get; set; }

@@ -1,7 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="GemsAsc.Admin.AdminLogin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="GemsAsc.Pages.Login" %>
 
 <!DOCTYPE html>
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Admin Login</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -70,7 +71,7 @@
   </style>
 </head>
 <body>
-  <form id="form1" runat="server">
+  <form id="form2" runat="server">
     <div class="login-container">
       <div class="login-card">
         <div class="logo-header">
@@ -87,30 +88,56 @@
 
             <asp:Label ID="lblMessage" runat="server" ForeColor="Red" CssClass="erro-msg" />
 
+            <!-- Email Field -->
             <div class="form-group">
-              <asp:Label ID="lblUsername" runat="server" Text="Username" AssociatedControlID="txtUsername" />
-              <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" placeholder="Enter username" />
-              <asp:RequiredFieldValidator 
-                  ID="rfvUsername" 
-                  runat="server" 
-                  ControlToValidate="txtUsername"
-                  ErrorMessage="Username is required" 
-                  
-                  CssClass="text-danger error-msg" 
-                  Display="Dynamic" />
+                <asp:Label ID="lblEmail" runat="server" Text="Email" AssociatedControlID="txtEmail" />
+                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Enter email" />
+    
+                <!-- Required Validation -->
+                <asp:RequiredFieldValidator 
+                    ID="rfvEmail" 
+                    runat="server" 
+                    ControlToValidate="txtEmail"
+                    ErrorMessage="Email is required" 
+                    CssClass="text-danger error-msg" 
+                    Display="Dynamic" />
+    
+                <!-- Email Format Validation -->
+                <asp:RegularExpressionValidator
+                    ID="revEmail"
+                    runat="server"
+                    ControlToValidate="txtEmail"
+                    ErrorMessage="Invalid email format"
+                    CssClass="text-danger error-msg"
+                    Display="Dynamic"
+                    ValidationExpression="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
             </div>
 
+            <!-- Password Field -->
             <div class="form-group">
-              <asp:Label ID="lblPassword" runat="server" Text="Password" AssociatedControlID="txtPassword" />
-              <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Enter password" />
-              <asp:RequiredFieldValidator 
-                  ID="rfvPassword" 
-                  runat="server" 
-                  ControlToValidate="txtPassword"
-                  ErrorMessage="Password is required" 
-                  CssClass="text-danger error-msg" 
-                  Display="Dynamic" />
+                <asp:Label ID="lblPassword" runat="server" Text="Password" AssociatedControlID="txtPassword" />
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Enter password" />
+    
+                <!-- Required Validation -->
+                <asp:RequiredFieldValidator 
+                    ID="rfvPassword" 
+                    runat="server" 
+                    ControlToValidate="txtPassword"
+                    ErrorMessage="Password is required" 
+                    CssClass="text-danger error-msg" 
+                    Display="Dynamic" />
+    
+                <!-- Password Format Validation -->
+                <asp:RegularExpressionValidator
+                    ID="revPassword"
+                    runat="server"
+                    ControlToValidate="txtPassword"
+                    ErrorMessage="Password must contain at least one uppercase, one lowercase, one number, and one special character"
+                    CssClass="text-danger error-msg"
+                    Display="Dynamic"
+                    ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" />
             </div>
+            
 
             <asp:Button 
               ID="btnLogin" 

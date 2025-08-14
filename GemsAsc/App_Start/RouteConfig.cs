@@ -14,9 +14,9 @@ namespace GemsAsc
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
 
+            routes.MapPageRoute("LoginRoute", "Login", "~/Pages/Login.aspx");
 
-            routes.MapPageRoute("AdminDashboardRoute", "Admin/Dashboard", "~/Admin/Pages/Dashboard.aspx");
-            routes.MapPageRoute("LoginRoute", "Login", "~/Admin/AdminLogin.aspx");
+            
 
             routes.MapPageRoute("AboutUsRoute", "AboutUs", "~/Pages/About/AboutUs.aspx");
             routes.MapPageRoute("MessageRoute", "Message", "~/Pages/About/Message.aspx");
@@ -37,6 +37,16 @@ namespace GemsAsc
             routes.MapPageRoute("GalleryRoute", "Gallery", "~/Pages/GalleryPage.aspx");
 
             routes.MapPageRoute("EventsRoute", "Events", "~/Pages/Events.aspx");
+
+            routes.MapPageRoute("UserProfileRoute", "UserProfile", "~/Pages/UserProfile.aspx");
+
+
+            //Admin
+            routes.MapPageRoute("AdminDashboardRoute", "Admin/Dashboard", "~/Admin/Pages/Dashboard.aspx");
+
+
+            //Faculty
+            routes.MapPageRoute("FacultyDashboardRoute", "Faculty/Dashboard", "~/Faculty/Dashboard.aspx");
 
         }
     }

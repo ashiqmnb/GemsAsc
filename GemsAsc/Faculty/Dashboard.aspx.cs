@@ -5,16 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GemsAsc.Admin.Pages
+namespace GemsAsc.Faculty
 {
     public partial class Dashboard : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["AdminLoggedIn"] == null || !(bool)Session["AdminLoggedIn"])
-            //{
-            //    Response.Redirect("AdminLogin.aspx");
-            //}
+
         }
     }
 }
