@@ -11,7 +11,12 @@ namespace GemsAsc.Faculty
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var role = Session["Role"] as string;
+            if (role != "Faculty")
+            {
+                Response.Redirect(GetRouteUrl("AccessDeniedRoute", null));
+                return;
+            }
         }
         protected void btnLogout_Click(object sender, EventArgs e)
         {

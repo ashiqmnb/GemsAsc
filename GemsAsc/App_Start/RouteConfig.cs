@@ -15,10 +15,8 @@ namespace GemsAsc
             routes.EnableFriendlyUrls(settings);
 
             routes.MapPageRoute("LoginRoute", "Login", "~/Pages/Login.aspx");
-
             routes.MapPageRoute("RegisterRoute", "Register", "~/Pages/Register.aspx");
-
-
+            routes.MapPageRoute("AccessDeniedRoute", "AccessDenied", "~/Pages/AccessDenied.aspx");
 
             routes.MapPageRoute("AboutUsRoute", "AboutUs", "~/Pages/About/AboutUs.aspx");
             routes.MapPageRoute("MessageRoute", "Message", "~/Pages/About/Message.aspx");

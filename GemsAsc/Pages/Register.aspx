@@ -173,8 +173,9 @@
 
                     </ContentTemplate>
                 </asp:UpdatePanel>
-                <div style="text-align: center; margin-top: 10px;">
-                    <a href="Login.aspx" style="font-size: 14px;">Already have an account? Login</a>
+                <div style="text-align: center; margin-top: 10px; display:flex; justify-content: space-between">
+                    <a href="<%= Page.GetRouteUrl("LoginRoute", null) %>" style="font-size: 14px;">Already have an account? Login</a>
+                    <a href="/" style="font-size: 14px;">Home</a>
                 </div>
             </div>
         </div>

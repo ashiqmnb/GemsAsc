@@ -13,5 +13,23 @@ namespace GemsAsc.Components
 
     public partial class Navbar
     {
+
+        /// <summary>
+        /// navDynamicLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navDynamicLink1;
+
+        /// <summary>
+        /// navDynamicLink2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navDynamicLink2;
     }
 }

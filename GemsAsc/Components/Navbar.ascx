@@ -158,7 +158,8 @@
         <li class="nav-item"><a class="nav-link text-white" href="<%= GetRouteUrl("IqacRoute", null)%>">IQAC</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="<%= GetRouteUrl("GalleryRoute", null)%>">Gallery</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="<%= GetRouteUrl("EventsRoute", null)%>">Events</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="<%= Page.GetRouteUrl("LoginRoute", null) %>">Login</a></li>
+        <%--<li class="nav-item"><a class="nav-link text-white" href="<%= Page.GetRouteUrl("LoginRoute", null) %>">Login</a></li>--%>
+        <li class="nav-item" runat="server" id="navDynamicLink1"></li>
       </ul>
     </div>
   </div>
@@ -170,6 +171,7 @@
   <button class="btn-close float-end mb-3" id="closeMenu"></button>
 
   <ul class="nav flex-column">
+    <li class="nav-item" runat="server" id="navDynamicLink2"></li>
     <li class="nav-item"><a class="nav-link text-dark" href="../Default.aspx">Home</a></li>
 
     <li class="nav-item dropdown">
@@ -222,7 +224,7 @@
     <li class="nav-item"><a class="nav-link text-dark" href="<%= GetRouteUrl("IqacRoute", null)%>">IQAC</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="<%= GetRouteUrl("GalleryRoute", null)%>">Gallery</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="<%= GetRouteUrl("EventsRoute", null)%>">Events</a></li>
-    <li id="btnAdminLoginSm" class="nav-item"><a class="nav-link text-dark" href="../Admin/AdminLogin.aspx">Login</a></li>
+    <%--<li id="btnAdminLoginSm" class="nav-item"><a class="nav-link text-dark" href="../Admin/AdminLogin.aspx">Login</a></li>--%>
     
   </ul>     
 </div>

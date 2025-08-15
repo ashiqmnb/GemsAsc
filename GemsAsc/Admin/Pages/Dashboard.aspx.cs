@@ -11,10 +11,16 @@ namespace GemsAsc.Admin.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["AdminLoggedIn"] == null || !(bool)Session["AdminLoggedIn"])
-            //{
-            //    Response.Redirect("AdminLogin.aspx");
-            //}
+            if (Session["Name"] != null && Session["Role"] != null)
+            {
+                lblName.Text = "Welcome, " + Session["Name"].ToString();
+                lblRole.Text = "Role: " + Session["Role"].ToString();
+                lblId.Text = "Id: " + Session["UserId"].ToString();
+            }
+            else
+            {
+                lblName.Text = "Session expired or not logged in.";
+            }
         }
     }
 }

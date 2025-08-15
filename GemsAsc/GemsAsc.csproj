@@ -249,6 +249,7 @@
     <Content Include="Pages\Academics\AcademicCalendar.aspx" />
     <Content Include="Pages\About\BoardOfDirectors.aspx" />
     <Content Include="Pages\About\CodeOfConduct.aspx" />
+    <Content Include="Pages\AccessDenied.aspx" />
     <Content Include="Pages\Department.aspx" />
     <Content Include="Pages\Events.aspx" />
     <Content Include="Pages\Facilities\Amenities.aspx" />
@@ -462,6 +463,13 @@
     </Compile>
     <Compile Include="Pages\About\CodeOfConduct.aspx.designer.cs">
       <DependentUpon>CodeOfConduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Department.aspx.cs">
       <DependentUpon>Department.aspx</DependentUpon>
