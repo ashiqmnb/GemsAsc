@@ -1,4 +1,5 @@
-﻿using GemsAsc.Repositories;
+﻿using GemsAsc.Assets;
+using GemsAsc.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,18 +42,15 @@ namespace GemsAsc.Pages
                 switch (user.Role)
                 {
                     case "Principal":
-                        Response.Redirect(Page.GetRouteUrl("AdminDashboardRoute", null), false);
-                        Context.ApplicationInstance.CompleteRequest();
+                        Toast.ShowAndRedirect(this.Page, "Login successfull", GetRouteUrl("AdminDashboardRoute", null), "success", 1800);
                         break;
 
                     case "Faculty":
-                        Response.Redirect(Page.GetRouteUrl("FacultyDashboardRoute", null), false);
-                        Context.ApplicationInstance.CompleteRequest();
+                        Toast.ShowAndRedirect(this.Page, "Login successfull", GetRouteUrl("FacultyDashboardRoute", null), "success", 1800);
                         break;
 
                     default:
-                        Response.Redirect(Page.GetRouteUrl("UserProfileRoute", null), false);
-                        Context.ApplicationInstance.CompleteRequest();
+                        Toast.ShowAndRedirect(this.Page, "Login successfull", GetRouteUrl("UserProfileRoute", null), "success", 1800);
                         break;
                 }
             }

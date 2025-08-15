@@ -3,35 +3,31 @@
   "WorkspaceRootPath": "D:\\Claysys Training\\GemsAsc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\pages\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\pages\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\repositories\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\repositories\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\admin\\adminmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\admin\\adminmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\admin\\pages\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\admin\\pages\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\pages\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\repositories\\departmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|D:\\Claysys Training\\GemsAsc\\gemsasc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|D:\\Claysys Training\\GemsAsc\\gemsasc\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|D:\\Claysys Training\\GemsAsc\\gemsasc\\repositories\\departmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\repositories\\departmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -63,64 +59,25 @@
           ]
         },
         {
-          "DockedWidth": 1484,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 1198,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminMaster.Master.cs",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\AdminMaster.Master.cs",
-              "RelativeDocumentMoniker": "GemsAsc\\Admin\\AdminMaster.Master.cs",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\AdminMaster.Master.cs",
-              "RelativeToolTip": "GemsAsc\\Admin\\AdminMaster.Master.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T11:04:42.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthRepo.cs",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\AuthRepo.cs",
-              "RelativeDocumentMoniker": "GemsAsc\\Repositories\\AuthRepo.cs",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\AuthRepo.cs",
-              "RelativeToolTip": "GemsAsc\\Repositories\\AuthRepo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T10:22:41.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Login.aspx.cs",
               "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Login.aspx.cs",
               "RelativeDocumentMoniker": "GemsAsc\\Pages\\Login.aspx.cs",
               "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Login.aspx.cs",
               "RelativeToolTip": "GemsAsc\\Pages\\Login.aspx.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAtwD8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:28:48.528Z",
+              "WhenOpened": "2025-08-15T12:36:11.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Dashboard.aspx.cs",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\Dashboard.aspx.cs",
-              "RelativeDocumentMoniker": "GemsAsc\\Admin\\Pages\\Dashboard.aspx.cs",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\Dashboard.aspx.cs",
-              "RelativeToolTip": "GemsAsc\\Admin\\Pages\\Dashboard.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T11:04:48.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Login.aspx",
               "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Login.aspx",
               "RelativeDocumentMoniker": "GemsAsc\\Pages\\Login.aspx",
@@ -128,44 +85,70 @@
               "RelativeToolTip": "GemsAsc\\Pages\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-08-14T09:28:26.038Z",
+              "WhenOpened": "2025-08-15T06:06:30.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "GemsAsc\\App_Start\\RouteConfig.cs",
               "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\App_Start\\RouteConfig.cs",
               "RelativeToolTip": "GemsAsc\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-14T09:25:09.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthRepo.cs",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\AuthRepo.cs",
+              "RelativeDocumentMoniker": "GemsAsc\\Repositories\\AuthRepo.cs",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\AuthRepo.cs",
+              "RelativeToolTip": "GemsAsc\\Repositories\\AuthRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T10:22:41.571Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 1257,
+          "DockedWidth": 1053,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "GemsAsc\\Repositories\\DatabaseHelper.cs",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\DatabaseHelper.cs",
-              "RelativeToolTip": "GemsAsc\\Repositories\\DatabaseHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Register.aspx.cs",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Register.aspx.cs",
+              "RelativeDocumentMoniker": "GemsAsc\\Pages\\Register.aspx.cs",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Register.aspx.cs",
+              "RelativeToolTip": "GemsAsc\\Pages\\Register.aspx.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAYwHwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T10:29:55.953Z",
+              "WhenOpened": "2025-08-15T12:44:50.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "Register.aspx",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Register.aspx",
+              "RelativeDocumentMoniker": "GemsAsc\\Pages\\Register.aspx",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Register.aspx",
+              "RelativeToolTip": "GemsAsc\\Pages\\Register.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-15T12:38:03.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "DepartmentRepo.cs",
               "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\DepartmentRepo.cs",
               "RelativeDocumentMoniker": "GemsAsc\\Repositories\\DepartmentRepo.cs",

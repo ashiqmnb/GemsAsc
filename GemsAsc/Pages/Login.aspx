@@ -4,9 +4,42 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Admin Login</title>
+  <title>Login</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  
+  <%--Toastr.js integration--%>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    window.AppToast = {
+      show: function (message, icon, position, ms) {
+        Swal.fire({
+          icon: icon || 'success',
+          title: message,
+          toast: true,
+          position: position || 'top-end',
+          showConfirmButton: false,
+          timer: ms || 3000,
+          timerProgressBar: true
+        });
+      },
+      showAndRedirect: function (message, url, icon, ms) {
+        Swal.fire({
+          icon: icon || 'success',
+          title: message,
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: ms || 1500,
+          timerProgressBar: true,
+          didClose: function () {
+            if (url) window.location.href = url;
+          }
+        });
+      }
+    };
+  </script>  
+  
   <style>
     body, html {
       height: 100%;
@@ -33,7 +66,7 @@
       background-image: url('../Assets/Images/Banner/homeImge2.webp');
       background-size: cover;
       background-position: center;
-      filter: blur(4px);
+      filter: blur(2px);
       z-index: 0;
     }
 
@@ -67,6 +100,7 @@
     .error-msg {
         font-size: 14px;
     }
+
 
   </style>
 </head>
@@ -148,6 +182,9 @@
 
           </ContentTemplate>
         </asp:UpdatePanel>
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="Register.aspx" style="font-size: 14px;">Student Register</a>
+        </div>
       </div>
     </div>
   </form>
