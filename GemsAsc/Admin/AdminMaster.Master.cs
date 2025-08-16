@@ -18,6 +18,10 @@ namespace GemsAsc.Admin
                 Response.Redirect(GetRouteUrl("AccessDeniedRoute", null));
                 return;
             }
+            else
+            {
+                lblName.Text = Session["Name"].ToString();
+            }
 
         }
 

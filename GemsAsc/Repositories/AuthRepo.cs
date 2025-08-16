@@ -32,6 +32,7 @@ namespace GemsAsc.Repositories
                         user.Email = reader["Email"].ToString();
                         user.Password = reader["UserPassword"].ToString();
                         user.Role = reader["Role"].ToString();
+                        user.IsBlocked = (bool)reader["IsBlocked"];
                     }
                 }
 
@@ -47,7 +48,6 @@ namespace GemsAsc.Repositories
 
         public bool RegistrUser(RegisterUserDTO userDto)
         {
-
             try
             {
                 using(SqlConnection conn = DatabaseHelper.GetConnection())
@@ -110,6 +110,48 @@ namespace GemsAsc.Repositories
             {
                 Console.WriteLine("Connection Error: " + ex.Message);
                 return false;
+            }
+        }
+
+
+
+        public UserProfileDTO GetUserProfileById(string userId)
+        {
+            try
+            {
+                UserProfileDTO userProfile = new UserProfileDTO();
+                using(SqlConnection conn = DatabaseHelper.GetConnection())
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("GetUserDetailsById", conn))
+                    {
+                        cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@UserID", userId.ToString());
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        if(reader.Read())
+                        {
+                            userProfile = new UserProfileDTO
+                            {
+                                UserID = reader.GetOrdinal("UserID").ToString(),
+                                Name = reader["Name"].ToString(),
+                                Email = reader["Email"].ToString(),
+                                AddNo = Convert.ToInt32(reader["AddNo"]),
+                                RegisterNo = reader["RegisterNo"].ToString(),
+                                Course = reader["Course"].ToString(),
+                                Department = reader["Department"].ToString(),
+                                ImageUrl = reader["ImageUrl"].ToString()
+                            };
+                        }
+                    }
+                }
+
+                return userProfile;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

@@ -113,7 +113,7 @@ namespace GemsAsc.Pages
 
             AuthRepo authRepo = new AuthRepo();
 
-            var userDto = new RegisterUserDTO
+            var userDto = new WcfAuthService.RegisterUserDTO
             {
                 Email = txtEmail.Text,
                 Name = txtName.Text,
@@ -124,7 +124,12 @@ namespace GemsAsc.Pages
                 Department = ddlDepartment.Text,
             };
 
-            var isRegistered = authRepo.RegistrUser(userDto);
+            //var isRegistered = authRepo.RegistrUser(userDto);
+
+            WcfAuthService.Service1Client wcfAuth = new WcfAuthService.Service1Client();
+
+            var isRegistered = wcfAuth.RegistrUser(userDto);
+
 
             if (isRegistered)
             {

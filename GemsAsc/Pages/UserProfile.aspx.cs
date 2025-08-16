@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GemsAsc.DTOs.User;
+using GemsAsc.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,15 +13,33 @@ namespace GemsAsc.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Name"] != null && Session["Role"] != null)
+            if (!IsPostBack)
             {
-                lblName.Text = "Welcome, " + Session["Name"].ToString();
-                lblRole.Text = "Role: " + Session["Role"].ToString();
-                lblId.Text = "Id: " + Session["UserId"].ToString();
-            }
-            else
-            {
-                lblName.Text = "Session expired or not logged in.";
+                if (Session["UserId"] != null)
+                {
+                    //AuthRepo authRepo = new AuthRepo();
+                    //var userProfile = authRepo.GetUserProfileById(Session["UserId"].ToString());
+
+                    WcfAuthService.Service1Client wcfAuth = new WcfAuthService.Service1Client();
+
+                    var userProfile = wcfAuth.GetUserProfileById(Session["UserId"].ToString());
+
+                    if (userProfile != null)
+                    {
+                        lblName.Text = userProfile.Name;
+                        lblEmail.Text = userProfile.Email;
+                        lblAddNo.Text = userProfile.AddNo.ToString();
+                        lblRegisterNo.Text = userProfile.RegisterNo;
+                        lblCourse.Text = userProfile.Course;
+                        lblDepartment.Text = userProfile.Department;
+                        imgProfile.ImageUrl = string.IsNullOrEmpty(userProfile.ImageUrl) ? "../Assets/Images/People/student.png" : userProfile.ImageUrl;
+                    }
+                }
+                else
+                {
+                    Response.Redirect("~/Login.aspx");
+                }
+
             }
         }
 

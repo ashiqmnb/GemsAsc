@@ -23,9 +23,13 @@ namespace GemsAsc.Pages
                 string email = txtEmail.Text.Trim();
                 string password = txtPassword.Text.Trim();
 
-                AuthRepo authRepo = new AuthRepo();
-                var user = authRepo.GetUserByEmail(email);
+                //AuthRepo authRepo = new AuthRepo();
+                //var user = authRepo.GetUserByEmail(email);
 
+                WcfAuthService.Service1Client wcfAuth = new WcfAuthService.Service1Client();
+                var user = wcfAuth.GetUserByEmail(email);
+
+                
                 if (user == null)
                 {
                     lblMessage.Text = "No user found with this email.";
@@ -35,6 +39,11 @@ namespace GemsAsc.Pages
                 if (!string.Equals(user.Password, password, StringComparison.Ordinal))
                 {
                     lblMessage.Text = "Incorrect password.";
+                    return;
+                }
+                if(user.IsBlocked == true)
+                {
+                    lblMessage.Text = "You are blocked by admin.";
                     return;
                 }
 

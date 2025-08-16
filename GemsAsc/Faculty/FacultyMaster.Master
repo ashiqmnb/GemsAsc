@@ -4,7 +4,8 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Faculty </title>
+    <link href="../Assets/Images/Logo/gemslogo.png" rel="shortcut icon" type="image/x-icon" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
