@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Claysys Training\\GemsAsc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\admin\\pages\\students.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\admin\\pages\\students.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\faculty\\facultymaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\faculty\\facultymaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\admin\\pages\\students.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\admin\\pages\\students.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\admin\\pages\\addfaculty.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\admin\\pages\\addfaculty.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\admin\\adminmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\admin\\adminmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\admin\\pages\\addfaculty.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\admin\\pages\\addfaculty.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\repositories\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\repositories\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,71 +25,75 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1773,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 1554,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FacultyMaster.Master",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Faculty\\FacultyMaster.Master",
+              "RelativeDocumentMoniker": "GemsAsc\\Faculty\\FacultyMaster.Master",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Faculty\\FacultyMaster.Master",
+              "RelativeToolTip": "GemsAsc\\Faculty\\FacultyMaster.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-17T09:26:39.291Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AdminMaster.Master",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\AdminMaster.Master",
-              "RelativeDocumentMoniker": "GemsAsc\\Admin\\AdminMaster.Master",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\AdminMaster.Master",
-              "RelativeToolTip": "GemsAsc\\Admin\\AdminMaster.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-08-16T14:54:11.839Z",
+              "Title": "AddFaculty.aspx.cs",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\AddFaculty.aspx.cs",
+              "RelativeDocumentMoniker": "GemsAsc\\Admin\\Pages\\AddFaculty.aspx.cs",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\AddFaculty.aspx.cs",
+              "RelativeToolTip": "GemsAsc\\Admin\\Pages\\AddFaculty.aspx.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCEAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T07:57:06.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Students.aspx.cs",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\Students.aspx.cs",
-              "RelativeDocumentMoniker": "GemsAsc\\Admin\\Pages\\Students.aspx.cs",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\Students.aspx.cs",
-              "RelativeToolTip": "GemsAsc\\Admin\\Pages\\Students.aspx.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwDQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T14:09:13.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Students.aspx",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\Students.aspx",
-              "RelativeDocumentMoniker": "GemsAsc\\Admin\\Pages\\Students.aspx",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\Students.aspx",
-              "RelativeToolTip": "GemsAsc\\Admin\\Pages\\Students.aspx",
+              "Title": "AddFaculty.aspx",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\AddFaculty.aspx",
+              "RelativeDocumentMoniker": "GemsAsc\\Admin\\Pages\\AddFaculty.aspx",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\AddFaculty.aspx",
+              "RelativeToolTip": "GemsAsc\\Admin\\Pages\\AddFaculty.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-08-16T14:05:36.689Z",
+              "WhenOpened": "2025-08-17T07:19:14.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\UserService.cs",
-              "RelativeDocumentMoniker": "GemsAsc\\Repositories\\UserService.cs",
-              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Repositories\\UserService.cs",
-              "RelativeToolTip": "GemsAsc\\Repositories\\UserService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAAIAAAAAAAAAA==",
+              "Title": "CloudinaryService.cs",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Services\\CloudinaryService.cs",
+              "RelativeDocumentMoniker": "GemsAsc\\Services\\CloudinaryService.cs",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Services\\CloudinaryService.cs",
+              "RelativeToolTip": "GemsAsc\\Services\\CloudinaryService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwDIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T13:22:43.755Z",
+              "WhenOpened": "2025-08-17T07:08:03.682Z",
               "EditorCaption": ""
             }
           ]

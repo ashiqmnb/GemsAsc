@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GemsAsc.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,12 @@ namespace GemsAsc.Admin.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            UserService userService = new UserService();
 
+            var dept = userService.GetDepartments();
+
+            rptDepartments.DataSource = dept;
+            rptDepartments.DataBind();
         }
     }
 }

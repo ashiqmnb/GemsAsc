@@ -1,4 +1,6 @@
-﻿using GemsAsc.DTOs;
+﻿using GemsAsc.Admin.Pages;
+using GemsAsc.DTOs;
+using GemsAsc.Models;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -49,6 +51,39 @@ namespace GemsAsc.Repositories
                     ).ToList();
 
                 return students;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+        public int ToggleBlock(string id)
+        {
+            try
+            {
+                string query = "UPDATE Users SET IsBlocked = CASE WHEN IsBlocked = 1 THEN 0 ELSE 1 END WHERE UserID = @id";
+                var res = _context.Database.ExecuteSqlCommand(query,
+                        new SqlParameter("@id", id)
+                    );
+                return res;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+        public List<DepartmentDTO> GetDepartments()
+        {
+            try
+            {
+                string query = "SELECT * FROM Departments";
+                var depts = _context.Database.SqlQuery<DepartmentDTO>(query).ToList();
+                return depts;
             }
             catch (Exception ex)
             {

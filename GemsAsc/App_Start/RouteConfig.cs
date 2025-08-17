@@ -46,6 +46,7 @@ namespace GemsAsc
             routes.MapPageRoute("AdminStudentsRoute", "Admin/Students", "~/Admin/Pages/Students.aspx");
             routes.MapPageRoute("AdminFacultiesRoute", "Admin/Faculties", "~/Admin/Pages/Faculties.aspx");
             routes.MapPageRoute("AdminDepartmentsRoute", "Admin/Departments", "~/Admin/Pages/Departments.aspx");
+            routes.MapPageRoute("AdminAddFacultyRoute", "Admin/AddNewFaculty", "~/Admin/Pages/AddFaculty.aspx");
 
 
             //Faculty

@@ -1,5 +1,7 @@
-﻿using GemsAsc.DTOs.User;
+﻿using GemsAsc.DTOs;
+using GemsAsc.DTOs.User;
 using GemsAsc.Pages;
+using GemsAsc.WcfAuthService;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -12,11 +14,11 @@ namespace GemsAsc.Repositories
 {
     public class AuthRepo
     {
-        public UserDTO GetUserByEmail(string email)
+        public UserDTO1 GetUserByEmail(string email)
         {
             try
             {
-                UserDTO user = new UserDTO();
+                UserDTO1 user = new UserDTO1();
                 using (SqlConnection conn = DatabaseHelper.GetConnection())
                 {
                     string query = "SELECT * FROM Users WHERE Email = @email";
@@ -46,7 +48,7 @@ namespace GemsAsc.Repositories
 
 
 
-        public bool RegistrUser(RegisterUserDTO userDto)
+        public bool RegistrUser(RegisterUserDTO1 userDto)
         {
             try
             {
@@ -115,11 +117,79 @@ namespace GemsAsc.Repositories
 
 
 
-        public UserProfileDTO GetUserProfileById(string userId)
+        public bool AddNewFaculty(AddFacultyDTO facultyDto)
+        {
+            try {
+                using(SqlConnection conn = DatabaseHelper.GetConnection())
+                {
+                    conn.Open();
+
+                    using (SqlTransaction tran = conn.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Insert into Users and get UserID
+                            string insertUserQuery = @"
+                            INSERT INTO Users (Name, Email, UserPassword, DepartmentID, Role, ImageUrl)
+                            OUTPUT INSERTED.UserID
+                            VALUES (@Name, @Email, @UserPassword, 
+                                   (SELECT DepartmentID FROM Departments WHERE Name = @DepartmentName),
+                                   'Faculty', @ImageUrl)";
+
+                            string facultyId;
+                            using (SqlCommand cmd = new SqlCommand(insertUserQuery, conn, tran))
+                            {
+                                cmd.Parameters.AddWithValue("@Name", facultyDto.Name);
+                                cmd.Parameters.AddWithValue("@Email", facultyDto.Email);
+                                cmd.Parameters.AddWithValue("@UserPassword", facultyDto.Password);
+                                cmd.Parameters.AddWithValue("@DepartmentName", facultyDto.Department);
+                                cmd.Parameters.AddWithValue("@ImageUrl", facultyDto.ImageUrl);
+
+                                facultyId = cmd.ExecuteScalar().ToString();
+                            }
+
+                            // Insert into Students table
+                            string insertStudentQuery = @"
+                            INSERT INTO Faculties (UserID, Designation)
+                            VALUES (@UserID, @Designation)";
+
+                            using (SqlCommand cmd = new SqlCommand(insertStudentQuery, conn, tran))
+                            {
+                                cmd.Parameters.AddWithValue("@UserID", facultyId);
+                                cmd.Parameters.AddWithValue("@Designation", facultyDto.Designation);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            tran.Commit();
+
+                            return true;
+
+
+                        }
+                        catch (Exception ex)
+                        {
+                            tran.Rollback();
+                            Console.WriteLine("Error: " + ex.Message);
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Connection Error: " + ex.Message);
+                return false;
+            }
+        }
+
+
+
+        public UserProfileDTO1 GetUserProfileById(string userId)
         {
             try
             {
-                UserProfileDTO userProfile = new UserProfileDTO();
+                UserProfileDTO1 userProfile = new UserProfileDTO1();
                 using(SqlConnection conn = DatabaseHelper.GetConnection())
                 {
                     conn.Open();
@@ -132,7 +202,7 @@ namespace GemsAsc.Repositories
 
                         if(reader.Read())
                         {
-                            userProfile = new UserProfileDTO
+                            userProfile = new UserProfileDTO1
                             {
                                 UserID = reader.GetOrdinal("UserID").ToString(),
                                 Name = reader["Name"].ToString(),

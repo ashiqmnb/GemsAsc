@@ -7,6 +7,39 @@
     <link href="../Assets/Images/Logo/gemslogo.png" rel="shortcut icon" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 
+    <%--Toastr.js integration--%>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      window.AppToast = {
+        show: function (message, icon, position, ms) {
+          Swal.fire({
+            icon: icon || 'success',
+            title: message,
+            toast: true,
+            position: position || 'top-end',
+            showConfirmButton: false,
+            timer: ms || 3000,
+            timerProgressBar: true
+          });
+        },
+        showAndRedirect: function (message, url, icon, ms) {
+          Swal.fire({
+            icon: icon || 'success',
+            title: message,
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: ms || 1500,
+            timerProgressBar: true,
+            didClose: function () {
+              if (url) window.location.href = url;
+            }
+          });
+        }
+      };
+    </script>
+
+
     <style>
         body {
             margin: 0;
@@ -98,6 +131,7 @@
                     <a href="<%= Page.GetRouteUrl("AdminDashboardRoute", null) %>" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                     <a href="<%= Page.GetRouteUrl("AdminStudentsRoute", null) %>" class="nav-link"><i class="fas fa-users"></i> Students</a>
                     <a href="<%= Page.GetRouteUrl("AdminFacultiesRoute", null) %>" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculties</a>
+                    <a href="<%= Page.GetRouteUrl("AdminAddFacultyRoute", null) %>" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Add New Faculty</a>
                     <a href="<%= Page.GetRouteUrl("AdminDepartmentsRoute", null) %>" class="nav-link"><i class="fas fa-building"></i> Departments</a>
                 </div>
 

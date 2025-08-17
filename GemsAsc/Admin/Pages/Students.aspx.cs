@@ -58,5 +58,16 @@ namespace GemsAsc.Admin.Pages
             string selectedDept = ddlDepartment.SelectedValue;
             BindStudents(selectedDept);
         }
+
+        protected void btnBlockUnblock_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            string addNo = btn.CommandArgument;
+
+            UserService userService = new UserService();
+            userService.ToggleBlock(addNo.ToString());
+
+            BindStudents(ddlDepartment.SelectedValue);
+        }
     }
 }

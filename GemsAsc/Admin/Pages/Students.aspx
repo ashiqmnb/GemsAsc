@@ -82,9 +82,13 @@
                     <!-- Top Row -->
                     <div class="card-header">
                         <h3><%# Eval("Name") %></h3>
-                        <%# (bool)Eval("IsBlocked") 
-                            ? "<button class='btn btn-success'>Unblock</button>" 
-                            : "<button class='btn btn-danger'>Block</button>" %>
+                        <asp:Button 
+                            ID="btnBlockUnblock" 
+                            runat="server" 
+                            Text='<%# (bool)Eval("IsBlocked") ? "Unblock" : "Block" %>' 
+                            CommandArgument='<%# Eval("UserID") %>' 
+                            OnClick="btnBlockUnblock_Click"
+                            CssClass='<%# (bool)Eval("IsBlocked") ? "btn btn-success" : "btn btn-danger" %>' />
                     </div>
 
                     <!-- Bottom Row -->
