@@ -131,7 +131,7 @@
                     <a href="<%= Page.GetRouteUrl("AdminDashboardRoute", null) %>" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                     <a href="<%= Page.GetRouteUrl("AdminStudentsRoute", null) %>" class="nav-link"><i class="fas fa-users"></i> Students</a>
                     <a href="<%= Page.GetRouteUrl("AdminFacultiesRoute", null) %>" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculties</a>
-                    <a href="<%= Page.GetRouteUrl("AdminAddFacultyRoute", null) %>" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Add New Faculty</a>
+                    <a href="<%= Page.GetRouteUrl("AdminAddFacultyRoute", null) %>" class="nav-link"><i class="fa-solid fa-user-plus"></i> Add New Faculty</a>
                     <a href="<%= Page.GetRouteUrl("AdminDepartmentsRoute", null) %>" class="nav-link"><i class="fas fa-building"></i> Departments</a>
                 </div>
 

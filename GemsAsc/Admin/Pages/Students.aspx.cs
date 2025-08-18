@@ -36,7 +36,6 @@ namespace GemsAsc.Admin.Pages
             ddlDepartment.Items.Add(new ListItem("Social Work"));
             ddlDepartment.Items.Add(new ListItem("MultiMedia"));
             ddlDepartment.Items.Add(new ListItem("Travel and Tourism"));
-
         }
 
         private void BindStudents(string department = "All")

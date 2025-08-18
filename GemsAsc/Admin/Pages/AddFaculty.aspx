@@ -32,10 +32,9 @@
         }
 
         .faculty-header {
-            background: linear-gradient(135deg, #16704C, #1fa370);
-            color: #fff;
-            padding: 20px;
+            color: #16704C;
             text-align: center;
+            padding: 20px;
         }
 
         .faculty-header h2 {
@@ -45,18 +44,25 @@
         }
 
         .faculty-body {
-            padding: 30px;
+            padding: 10px 50px 20px 50px;
         }
 
         .form-group {
-            margin-bottom: 18px;
+            margin-bottom: 18px; 
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
         }
 
         .form-control, .form-control-file, .form-select {
-/*            border-radius: 8px !important;*/
+            height: 30px;
+            width: 100%;
             box-shadow: none;
             border: 1px solid #ced4da;
             transition: all 0.2s;
+            border-radius: 8px;
+            padding-left: 15px;
+            
         }
 
         .form-control:focus, .form-select:focus {
@@ -72,6 +78,10 @@
         .btn-success {
             background: #16704C;
             border-color: #16704C;
+            height: 30px;
+            width: 150px;
+            color: white;
+            font-weight: 600;
         }
 
         .btn-success:hover {

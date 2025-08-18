@@ -34,6 +34,7 @@ namespace GemsAsc.Admin.Pages
                 ddlDepartment.Items.Add(new ListItem("Sociology"));
                 ddlDepartment.Items.Add(new ListItem("Social Work"));
                 ddlDepartment.Items.Add(new ListItem("MultiMedia"));
+                ddlDepartment.Items.Add(new ListItem("Languages"));
                 ddlDepartment.Items.Add(new ListItem("Travel and Tourism"));
                 ddlDepartment.Items.Add(new ListItem("Physical Education"));
             }
@@ -72,7 +73,7 @@ namespace GemsAsc.Admin.Pages
             }
             else
             {
-                Response.Write("<script>alert('Error while registering faculty.');</script>");
+                Toast.Error(this.Page, "Error while registering faculty.", 1800);
             }
         }
     }

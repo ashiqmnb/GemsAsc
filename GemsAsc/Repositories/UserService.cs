@@ -58,6 +58,37 @@ namespace GemsAsc.Repositories
             }
         }
 
+        
+        public List<FacultyResDTO> GetFacilities()
+        {
+            try
+            {
+                var faculties = _context.Database.SqlQuery<FacultyResDTO>("EXEC GetFaculties").ToList();
+                return faculties;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public List<FacultyResDTO> GetFacultiesByDept(string deptName)
+        {
+            try
+            {
+                var faculties = _context.Database.SqlQuery<FacultyResDTO>(
+                        "EXEC GetFacultiesByDepartment @Dept",
+                        new SqlParameter("@Dept", deptName)
+                    ).ToList();
+
+                return faculties;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
 
         public int ToggleBlock(string id)
         {

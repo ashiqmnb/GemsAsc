@@ -534,6 +534,7 @@
     </Compile>
     <Compile Include="DTOs\AddFacultyDTO.cs" />
     <Compile Include="DTOs\DepartmentDTO.cs" />
+    <Compile Include="DTOs\FacultyResDTO.cs" />
     <Compile Include="DTOs\Student.cs" />
     <Compile Include="DTOs\User\RegisterUserDTO1.cs" />
     <Compile Include="DTOs\User\UserDTO1.cs" />

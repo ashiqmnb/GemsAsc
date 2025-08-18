@@ -21,11 +21,18 @@
             font-weight: 600;
             border-bottom: 4px solid #16704C;
         }
+
+        .student-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            margin-top: 20px;
+        }
+
         .student-card {
             border: 1px solid #ccc;
             border-radius: 10px;
             padding: 15px;
-            margin: 15px 0;
             background: #f9f9f9;
             box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
         }
@@ -76,37 +83,37 @@
             </asp:DropDownList>
         </div>
 
-        <asp:Repeater ID="rptStudents" runat="server">
-            <ItemTemplate>
-                <div class="student-card">
-                    <!-- Top Row -->
-                    <div class="card-header">
-                        <h3><%# Eval("Name") %></h3>
-                        <asp:Button 
-                            ID="btnBlockUnblock" 
-                            runat="server" 
-                            Text='<%# (bool)Eval("IsBlocked") ? "Unblock" : "Block" %>' 
-                            CommandArgument='<%# Eval("UserID") %>' 
-                            OnClick="btnBlockUnblock_Click"
-                            CssClass='<%# (bool)Eval("IsBlocked") ? "btn btn-success" : "btn btn-danger" %>' />
-                    </div>
-
-                    <!-- Bottom Row -->
-                    <div class="card-body">
-                        <!-- Left Column -->
-                        <div class="card-column">
-                            <p><b>Email:</b> <%# Eval("Email") %></p>
-                            <p><b>Register No:</b> <%# Eval("RegisterNo") %></p>
-                            <p><b>Admission No:</b> <%# Eval("AddNo") %></p>
+        <div class="student-container">
+            <asp:Repeater ID="rptStudents" runat="server">
+                <ItemTemplate>
+                    <div class="student-card">
+                        
+                        <div class="card-header">
+                            <h3><%# Eval("Name") %></h3>
+                            <asp:Button 
+                                ID="btnBlockUnblock" 
+                                runat="server" 
+                                Text='<%# (bool)Eval("IsBlocked") ? "Unblock" : "Block" %>' 
+                                CommandArgument='<%# Eval("UserID") %>' 
+                                OnClick="btnBlockUnblock_Click"
+                                CssClass='<%# (bool)Eval("IsBlocked") ? "btn btn-success" : "btn btn-danger" %>' />
                         </div>
-                        <!-- Right Column -->
-                        <div class="card-column">
-                            <p><b>Course:</b> <%# Eval("Course") %></p>
-                            <p><b>Department:</b> <%# Eval("Department") %></p>
+                        
+                        <div class="card-body">
+                            <div class="card-column">
+                                <p><b>Email:</b> <%# Eval("Email") %></p>
+                                <p><b>Register No:</b> <%# Eval("RegisterNo") %></p>
+                                <p><b>Admission No:</b> <%# Eval("AddNo") %></p>
+                            </div>
+                            <div class="card-column">
+                                <p><b>Course:</b> <%# Eval("Course") %></p>
+                                <p><b>Department:</b> <%# Eval("Department") %></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </ItemTemplate>
-        </asp:Repeater>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
+        
     </div>
 </asp:Content>
