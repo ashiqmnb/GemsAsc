@@ -20,7 +20,7 @@ namespace GemsAsc.Repositories
     }
     public class UserService
     {
-        public readonly AppDbContext _context;
+        private readonly AppDbContext _context;
 
         public UserService()
         {

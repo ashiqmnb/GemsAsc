@@ -40,14 +40,19 @@ namespace GemsAsc.Admin.Pages
 
         private void BindStudents(string department = "All")
         {
-            UserService userService = new UserService();
+            //UserService userService = new UserService();
+            WcfUserService.Service1Client wcfUserService = new WcfUserService.Service1Client();
             if (department == "All")
             {
-                rptStudents.DataSource = userService.GetStudents();
+                //var students = userService.GetStudents();
+                var students = wcfUserService.GetStudents();
+                rptStudents.DataSource = students;
             }
             else
             {
-                rptStudents.DataSource = userService.GetStudentsByDept(department);
+                //var studByDept = userService.GetStudentsByDept(department);
+                var studByDept = wcfUserService.GetStudentsByDept(department);
+                rptStudents.DataSource = studByDept;
             }
             rptStudents.DataBind();
         }
@@ -63,8 +68,11 @@ namespace GemsAsc.Admin.Pages
             Button btn = (Button)sender;
             string addNo = btn.CommandArgument;
 
-            UserService userService = new UserService();
-            userService.ToggleBlock(addNo.ToString());
+            //UserService userService = new UserService();
+            WcfUserService.Service1Client wcfUserService = new WcfUserService.Service1Client();
+
+            //userService.ToggleBlock(addNo.ToString());
+            wcfUserService.ToggleBlock(addNo.ToString());
 
             BindStudents(ddlDepartment.SelectedValue);
         }

@@ -69,7 +69,7 @@ namespace GemsAsc.Admin.Pages
 
             if (result)
             {
-                Toast.ShowAndRedirect(this.Page, "Faculty registered successfully..", GetRouteUrl("AdminFacultiesRoute", null), "success", 1800);
+                Toast.ShowAndRedirect(this.Page, "Faculty registered successfully..", GetRouteUrl("AdminEventRoute", null), "success", 1800);
             }
             else
             {

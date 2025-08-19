@@ -7,6 +7,13 @@
     <link href="../Assets/Images/Logo/gemslogo.png" rel="shortcut icon" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 
+    <script src="<%= ResolveUrl("~/Scripts/jquery-3.7.0.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/bootstrap.bundle.min.js") %>"></script>
+
+    <link href="<%= ResolveUrl("~/Content/Site.css") %>" rel="stylesheet" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Content/bootstrap.min.css") %>" />
+
+
     <%--Toastr.js integration--%>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
@@ -132,6 +139,9 @@
                     <a href="<%= Page.GetRouteUrl("AdminStudentsRoute", null) %>" class="nav-link"><i class="fas fa-users"></i> Students</a>
                     <a href="<%= Page.GetRouteUrl("AdminFacultiesRoute", null) %>" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculties</a>
                     <a href="<%= Page.GetRouteUrl("AdminAddFacultyRoute", null) %>" class="nav-link"><i class="fa-solid fa-user-plus"></i> Add New Faculty</a>
+                    <a href="<%= Page.GetRouteUrl("AdminGalleryRoute", null) %>" class="nav-link"><i class="fa-solid fa-images"></i> Gallery</a>
+                    <a href="<%= Page.GetRouteUrl("AdminEventRoute", null) %>" class="nav-link"><i class="fa-solid fa-calendar"></i> Events</a>
+                    <a href="<%= Page.GetRouteUrl("AddEventGalleryRoute", null) %>" class="nav-link"><i class="fa-solid fa-calendar-plus"></i> Add Event/Gallery</a>
                     <a href="<%= Page.GetRouteUrl("AdminDepartmentsRoute", null) %>" class="nav-link"><i class="fas fa-building"></i> Departments</a>
                 </div>
 

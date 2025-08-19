@@ -12,12 +12,16 @@ namespace GemsAsc.Admin.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            UserService userService = new UserService();
+            //UserService userService = new UserService();
+            WcfUserService.Service1Client wcfUserService = new WcfUserService.Service1Client();
 
-            var dept = userService.GetDepartments();
+            //var depts = userService.GetDepartments();
+            var depts = wcfUserService.GetDepartments();
 
-            rptDepartments.DataSource = dept;
+            rptDepartments.DataSource = depts;
             rptDepartments.DataBind();
         }
     }
 }
+
+

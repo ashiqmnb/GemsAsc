@@ -49,5 +49,23 @@ namespace GemsAsc.Services
                 return uploadResult.SecureUrl.ToString();
             }
         }
+
+        public async Task<string> UploadImageAsync(HttpPostedFile file)
+        {
+
+            if (file == null || file.ContentLength == 0) return null;
+
+            using (var stream = file.InputStream)
+            {
+                var uploadParams = new ImageUploadParams
+                {
+                    File = new FileDescription(file.FileName, stream),
+                    Transformation = new Transformation().Quality("auto").FetchFormat("auto")
+                };
+
+                var uploadResult = await _cloudinary.UploadAsync(uploadParams);
+                return uploadResult.SecureUrl.ToString();
+            }
+        }
     }
 }

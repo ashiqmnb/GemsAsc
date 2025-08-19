@@ -41,14 +41,22 @@ namespace GemsAsc.Admin.Pages
 
         private void BindFaculties(string department = "All")
         {
-            UserService userService = new UserService();
+            //UserService userService = new UserService();
+            WcfUserService.Service1Client wcfUserService = new WcfUserService.Service1Client();
+
             if (department == "All")
             {
-                rptFaculties.DataSource = userService.GetFacilities();
+                //var faculties = userService.GetFacilities();
+                var faculties = wcfUserService.GetFacilities();
+
+                rptFaculties.DataSource = faculties;
             }
             else
             {
-                rptFaculties.DataSource = userService.GetFacultiesByDept(department);
+                //var facultiesByDept = userService.GetFacultiesByDept(department);
+                var facultiesByDept = wcfUserService.GetFacultiesByDept(department);
+
+                rptFaculties.DataSource = facultiesByDept;
             }
             rptFaculties.DataBind();
         }
@@ -65,8 +73,11 @@ namespace GemsAsc.Admin.Pages
             Button btn = (Button)sender;
             string addNo = btn.CommandArgument;
 
-            UserService userService = new UserService();
-            userService.ToggleBlock(addNo.ToString());
+            //UserService userService = new UserService();
+            WcfUserService.Service1Client wcfUserService = new WcfUserService.Service1Client();
+
+            //userService.ToggleBlock(addNo.ToString());
+            wcfUserService.ToggleBlock(addNo.ToString());
 
             BindFaculties(ddlDepartment.SelectedValue);
         }
