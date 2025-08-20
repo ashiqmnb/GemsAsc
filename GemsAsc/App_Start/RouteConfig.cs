@@ -37,6 +37,7 @@ namespace GemsAsc
             routes.MapPageRoute("GalleryRoute", "Gallery", "~/Pages/GalleryPage.aspx");
 
             routes.MapPageRoute("EventsRoute", "Events", "~/Pages/Events.aspx");
+            routes.MapPageRoute("EventsByIdRoute", "Events/{id}", "~/Pages/EventByIdPublic.aspx");
 
             routes.MapPageRoute("UserProfileRoute", "UserProfile", "~/Pages/UserProfile.aspx");
 
@@ -44,12 +45,17 @@ namespace GemsAsc
             //Admin
             routes.MapPageRoute("AdminDashboardRoute", "Admin/Dashboard", "~/Admin/Pages/Dashboard.aspx");
             routes.MapPageRoute("AdminStudentsRoute", "Admin/Students", "~/Admin/Pages/Students.aspx");
+
             routes.MapPageRoute("AdminFacultiesRoute", "Admin/Faculties", "~/Admin/Pages/Faculties.aspx");
-            routes.MapPageRoute("AdminDepartmentsRoute", "Admin/Departments", "~/Admin/Pages/Departments.aspx");
             routes.MapPageRoute("AdminAddFacultyRoute", "Admin/AddNewFaculty", "~/Admin/Pages/AddFaculty.aspx");
+
+            routes.MapPageRoute("AdminDepartmentsRoute", "Admin/Departments", "~/Admin/Pages/Departments.aspx");
+            routes.MapPageRoute("AdminDepartmentByNameRoute", "Admin/Department/{name}", "~/Admin/Pages/DepartmentById.aspx");
+
             routes.MapPageRoute("AdminGalleryRoute", "Admin/Gallery", "~/Admin/Pages/AdminGallery.aspx");
             routes.MapPageRoute("AdminEventRoute", "Admin/Events", "~/Admin/Pages/AdminEvents.aspx");
             routes.MapPageRoute("AddEventGalleryRoute", "Admin/Add-Event-Gallery", "~/Admin/Pages/AddEventGallery.aspx");
+            routes.MapPageRoute("AdminEventByIdRoute", "Admin/Event/{id}", "~/Admin/Pages/EventById.aspx");
 
 
             //Faculty

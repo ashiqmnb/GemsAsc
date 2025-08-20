@@ -30,6 +30,8 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
         display: block;
+        text-align: center;
+        text-decoration: none;
     }
 
     .event-card:hover {
@@ -161,13 +163,13 @@
     <div class="recent-events" id="mobileSlider">
         <asp:Repeater ID="rptEvents" runat="server">
             <ItemTemplate>
-                <div class="event-card">
-                    <asp:Image runat="server" CssClass="event-image" ImageUrl='<%# Eval("Image") %>' AlternateText="Event Image" />
+                <a href='<%# GetRouteUrl("EventsByIdRoute", new { id = Eval("EventID") }) %>' class="event-card">
+                    <asp:Image runat="server" CssClass="event-image" ImageUrl='<%# Eval("ImageUrl") %>' AlternateText="Event Image" />
                     <div class="event-content">
                         <div class="event-title"><%# Eval("Title") %></div>
                         <div class="event-date"><%# Eval("Date", "{0:dd MMM yyyy}") %></div>
                     </div>
-                </div>
+                </a>
             </ItemTemplate>
         </asp:Repeater>
     </div>

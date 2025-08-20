@@ -139,10 +139,10 @@
                     <a href="<%= Page.GetRouteUrl("AdminStudentsRoute", null) %>" class="nav-link"><i class="fas fa-users"></i> Students</a>
                     <a href="<%= Page.GetRouteUrl("AdminFacultiesRoute", null) %>" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculties</a>
                     <a href="<%= Page.GetRouteUrl("AdminAddFacultyRoute", null) %>" class="nav-link"><i class="fa-solid fa-user-plus"></i> Add New Faculty</a>
+                    <a href="<%= Page.GetRouteUrl("AdminDepartmentsRoute", null) %>" class="nav-link"><i class="fas fa-building"></i> Departments</a>
                     <a href="<%= Page.GetRouteUrl("AdminGalleryRoute", null) %>" class="nav-link"><i class="fa-solid fa-images"></i> Gallery</a>
                     <a href="<%= Page.GetRouteUrl("AdminEventRoute", null) %>" class="nav-link"><i class="fa-solid fa-calendar"></i> Events</a>
-                    <a href="<%= Page.GetRouteUrl("AddEventGalleryRoute", null) %>" class="nav-link"><i class="fa-solid fa-calendar-plus"></i> Add Event/Gallery</a>
-                    <a href="<%= Page.GetRouteUrl("AdminDepartmentsRoute", null) %>" class="nav-link"><i class="fas fa-building"></i> Departments</a>
+                    <a href="<%= Page.GetRouteUrl("AddEventGalleryRoute", null) %>" class="nav-link"><i class="fa-solid fa-calendar-plus"></i> Add Event / Gallery</a>
                 </div>
 
                 <asp:Button ID="btnLogout" runat="server" Text="Logout" 

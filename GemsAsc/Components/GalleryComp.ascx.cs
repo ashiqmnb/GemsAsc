@@ -21,8 +21,9 @@ namespace GemsAsc.Components
 
         private void LoadGallery()
         {
-            var repository = new GallaryRepo();
-            var items = repository.GetItemsForHome();
+
+            EventGalleryService eventGalleryService = new EventGalleryService();
+            var items = eventGalleryService.GetGalleryItemsForHome();
 
             foreach (var item in items)
             {

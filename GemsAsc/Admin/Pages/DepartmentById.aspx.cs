@@ -1,15 +1,13 @@
-﻿using GemsAsc.Admin.Pages;
-using GemsAsc.Repositories;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GemsAsc.Pages
+namespace GemsAsc.Admin.Pages
 {
-    public partial class Department : System.Web.UI.Page
+    public partial class DepartmentById : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,8 +28,6 @@ namespace GemsAsc.Pages
 
         private void LoadDepartment(string deptName)
         {
-            //DepartmentRepo repo = new DepartmentRepo();
-
             WcfUserService.Service1Client wcfUserService = new WcfUserService.Service1Client();
 
             var dept = wcfUserService.GetDepartmentsByName(deptName);
@@ -51,6 +47,5 @@ namespace GemsAsc.Pages
                 lblError.Text = "Department not found.";
             }
         }
-
     }
 }

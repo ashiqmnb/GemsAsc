@@ -169,7 +169,9 @@
     <Content Include="Admin\Pages\AdminEvents.aspx" />
     <Content Include="Admin\Pages\AdminGallery.aspx" />
     <Content Include="Admin\Pages\Dashboard.aspx" />
+    <Content Include="Admin\Pages\DepartmentById.aspx" />
     <Content Include="Admin\Pages\Departments.aspx" />
+    <Content Include="Admin\Pages\EventById.aspx" />
     <Content Include="Admin\Pages\Faculties.aspx" />
     <Content Include="Admin\Pages\Students.aspx" />
     <Content Include="Assets\Images\Banner\collageImg.jpg" />
@@ -358,6 +360,7 @@
     <Content Include="Pages\About\CodeOfConduct.aspx" />
     <Content Include="Pages\AccessDenied.aspx" />
     <Content Include="Pages\Department.aspx" />
+    <Content Include="Pages\EventByIdPublic.aspx" />
     <Content Include="Pages\Events.aspx" />
     <Content Include="Pages\Facilities\Amenities.aspx" />
     <Content Include="Pages\Facilities\Learnings.aspx" />
@@ -474,12 +477,26 @@
     <Compile Include="Admin\Pages\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Pages\DepartmentById.aspx.cs">
+      <DependentUpon>DepartmentById.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\DepartmentById.aspx.designer.cs">
+      <DependentUpon>DepartmentById.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Pages\Departments.aspx.cs">
       <DependentUpon>Departments.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\Pages\Departments.aspx.designer.cs">
       <DependentUpon>Departments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\EventById.aspx.cs">
+      <DependentUpon>EventById.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\EventById.aspx.designer.cs">
+      <DependentUpon>EventById.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Pages\Faculties.aspx.cs">
       <DependentUpon>Faculties.aspx</DependentUpon>
@@ -601,6 +618,8 @@
     </Compile>
     <Compile Include="DTOs\AddFacultyDTO.cs" />
     <Compile Include="DTOs\DepartmentDTO.cs" />
+    <Compile Include="DTOs\EventByIdDTO.cs" />
+    <Compile Include="DTOs\EventDTO.cs" />
     <Compile Include="DTOs\FacultyResDTO.cs" />
     <Compile Include="DTOs\Student.cs" />
     <Compile Include="DTOs\User\GalleryItem.cs" />
@@ -668,6 +687,13 @@
     </Compile>
     <Compile Include="Pages\Department.aspx.designer.cs">
       <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EventByIdPublic.aspx.cs">
+      <DependentUpon>EventByIdPublic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EventByIdPublic.aspx.designer.cs">
+      <DependentUpon>EventByIdPublic.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Events.aspx.cs">
       <DependentUpon>Events.aspx</DependentUpon>

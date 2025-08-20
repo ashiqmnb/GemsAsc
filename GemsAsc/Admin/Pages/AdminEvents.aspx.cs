@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GemsAsc.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,20 @@ namespace GemsAsc.Admin.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                BindEvents();
+            }
+        }
 
+        private void BindEvents()
+        {
+            EventGalleryService eventGalleryService = new EventGalleryService();
+
+            var events = eventGalleryService.GetEvents();
+
+            rptEvents.DataSource = events;
+            rptEvents.DataBind();
         }
     }
 }

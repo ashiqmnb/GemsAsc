@@ -20,17 +20,10 @@ namespace GemsAsc.Components
 
         private void BindEvents()
         {
-            var eventRepo = new EventsRepo();
-            var events = eventRepo.GetAllEventsForHome();
+            EventGalleryService eventGalleryService = new EventGalleryService();
+            var events = eventGalleryService.GetRecentEvents();
 
-            var eventViewModels = events.Select(ev => new
-            {
-                ev.Title,
-                ev.Date,
-                Image = ev.Images != null && ev.Images.Any() ? ev.Images.First() : "~/Assets/Images/placeholder.jpg"
-            }).ToList();
-
-            rptEvents.DataSource = eventViewModels;
+            rptEvents.DataSource = events;
             rptEvents.DataBind();
         }
     }

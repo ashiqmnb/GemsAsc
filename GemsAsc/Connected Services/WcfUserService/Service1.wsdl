@@ -43,6 +43,12 @@
   <wsdl:message name="IService1_GetDepartments_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDepartmentsResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_GetDepartmentsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentsByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDepartmentsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentsByNameResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetStudents">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetStudents" message="tns:IService1_GetStudents_InputMessage" />
@@ -67,6 +73,10 @@
     <wsdl:operation name="GetDepartments">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDepartments" message="tns:IService1_GetDepartments_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDepartmentsResponse" message="tns:IService1_GetDepartments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentsByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDepartmentsByName" message="tns:IService1_GetDepartmentsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDepartmentsByNameResponse" message="tns:IService1_GetDepartmentsByName_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -118,6 +128,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetDepartments">
       <soap:operation soapAction="http://tempuri.org/IService1/GetDepartments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentsByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDepartmentsByName" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -52,12 +52,14 @@
                 <ul class="dept-list">
             </HeaderTemplate>
             <ItemTemplate>
-                <li class="dept-item">
+                <li class="dept-item"
+                    onclick="window.location='<%# GetRouteUrl("AdminDepartmentByNameRoute", new { name = Eval("Name") }) %>'" 
+                    style="cursor:pointer;">
                     <div class="top-card">
                         <div class="dept-name">Departments of <%# Eval("Name") %></div>
                         <div class="dept-students">Students: <%# Eval("Students") %></div>
                     </div>
-                    <div class="dept-description"><%# Eval("Description") %></div>
+                    <%--<div class="dept-description"><%# Eval("Description") %></div>--%>
                 </li>
             </ItemTemplate>
             <FooterTemplate>

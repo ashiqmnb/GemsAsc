@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GemsAsc.Pages
+namespace GemsAsc.Admin.Pages
 {
 
 
-    public partial class Department
+    public partial class DepartmentById
     {
 
         /// <summary>

@@ -54,8 +54,8 @@
         }
         .profile-pic {
             width: 80px;
-            height: 80px;
-            border-radius: 50%;
+            height: 100px;
+            border-radius: 10px;
             object-fit: cover;
             margin-right: 15px;
             border: 2px solid #16704C;

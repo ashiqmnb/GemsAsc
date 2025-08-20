@@ -11,26 +11,26 @@ namespace GemsAsc.Pages
 {
 
 
-    public partial class Department
+    public partial class EventByIdPublic
     {
 
         /// <summary>
-        /// lblName control.
+        /// lblTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+        protected global::System.Web.UI.WebControls.Label lblTitle;
 
         /// <summary>
-        /// lblStudents control.
+        /// imgEvent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStudents;
+        protected global::System.Web.UI.WebControls.Image imgEvent;
 
         /// <summary>
         /// lblDescription control.
@@ -42,21 +42,12 @@ namespace GemsAsc.Pages
         protected global::System.Web.UI.WebControls.Label lblDescription;
 
         /// <summary>
-        /// rptFaculties control.
+        /// lblDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptFaculties;
-
-        /// <summary>
-        /// lblError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.WebControls.Label lblDate;
     }
 }

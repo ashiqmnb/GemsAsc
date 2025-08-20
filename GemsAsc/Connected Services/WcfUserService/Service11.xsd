@@ -47,10 +47,10 @@
   <xs:element name="ArrayOfDepartmentDTO" nillable="true" type="tns:ArrayOfDepartmentDTO" />
   <xs:complexType name="DepartmentDTO">
     <xs:sequence>
+      <xs:element minOccurs="0" name="DepartmentID" type="ser:guid" />
       <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Students" type="xs:int" />
-      <xs:element minOccurs="0" name="UserID" type="ser:guid" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="DepartmentDTO" nillable="true" type="tns:DepartmentDTO" />

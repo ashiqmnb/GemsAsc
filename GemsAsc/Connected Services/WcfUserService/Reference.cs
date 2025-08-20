@@ -337,6 +337,9 @@ namespace GemsAsc.WcfUserService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid DepartmentIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string DescriptionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -345,9 +348,6 @@ namespace GemsAsc.WcfUserService {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int StudentsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid UserIDField;
-        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -355,6 +355,19 @@ namespace GemsAsc.WcfUserService {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid DepartmentID {
+            get {
+                return this.DepartmentIDField;
+            }
+            set {
+                if ((this.DepartmentIDField.Equals(value) != true)) {
+                    this.DepartmentIDField = value;
+                    this.RaisePropertyChanged("DepartmentID");
+                }
             }
         }
         
@@ -393,19 +406,6 @@ namespace GemsAsc.WcfUserService {
                 if ((this.StudentsField.Equals(value) != true)) {
                     this.StudentsField = value;
                     this.RaisePropertyChanged("Students");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid UserID {
-            get {
-                return this.UserIDField;
-            }
-            set {
-                if ((this.UserIDField.Equals(value) != true)) {
-                    this.UserIDField = value;
-                    this.RaisePropertyChanged("UserID");
                 }
             }
         }
@@ -459,6 +459,12 @@ namespace GemsAsc.WcfUserService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDepartments", ReplyAction="http://tempuri.org/IService1/GetDepartmentsResponse")]
         System.Threading.Tasks.Task<GemsAsc.WcfUserService.DepartmentDTO[]> GetDepartmentsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDepartmentsByName", ReplyAction="http://tempuri.org/IService1/GetDepartmentsByNameResponse")]
+        GemsAsc.WcfUserService.DepartmentDTO GetDepartmentsByName(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDepartmentsByName", ReplyAction="http://tempuri.org/IService1/GetDepartmentsByNameResponse")]
+        System.Threading.Tasks.Task<GemsAsc.WcfUserService.DepartmentDTO> GetDepartmentsByNameAsync(string name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -534,6 +540,14 @@ namespace GemsAsc.WcfUserService {
         
         public System.Threading.Tasks.Task<GemsAsc.WcfUserService.DepartmentDTO[]> GetDepartmentsAsync() {
             return base.Channel.GetDepartmentsAsync();
+        }
+        
+        public GemsAsc.WcfUserService.DepartmentDTO GetDepartmentsByName(string name) {
+            return base.Channel.GetDepartmentsByName(name);
+        }
+        
+        public System.Threading.Tasks.Task<GemsAsc.WcfUserService.DepartmentDTO> GetDepartmentsByNameAsync(string name) {
+            return base.Channel.GetDepartmentsByNameAsync(name);
         }
     }
 }

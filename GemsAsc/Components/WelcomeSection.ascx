@@ -105,7 +105,7 @@
             This alone will lead our country to the heights of glory and fame. Every attempt made in this 
             direction should be fruitful and student friendly. Let us popularize the avenues of education to all.
         </p>
-        <a class="read-more" href="#">
+        <a class="read-more" href="<%= Page.GetRouteUrl("MessageRoute", null) %>">
             Read More <i class="fas fa-arrow-right"></i>
         </a>
     </div>

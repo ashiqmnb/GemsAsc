@@ -109,7 +109,7 @@
                         <br />
                     </div>
                     <div>
-                        <asp:Image ID="imgGalleryPreview" runat="server" Width="150px" CssClass="mt-2 border rounded" />
+                        <asp:Image ID="imgGalleryPreview" runat="server" Width="350px" CssClass="mt-2 border rounded" />
                     </div>
 
                     <asp:Button ID="btnAddGallery" runat="server" Text="Save Gallery" CssClass="btn submit-btn" OnClick="btnAddGallery_Click" ValidationGroup="GalleryGroup" />

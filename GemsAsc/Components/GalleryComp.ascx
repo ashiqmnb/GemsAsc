@@ -96,7 +96,7 @@
 <div class="container py-4">
     <div class="gallery-header mb-4">
         <h2 class="gallery-title">Gallery</h2>
-        <a href="#" class="see-all-btn">See All Photos</a>
+        <a href="<%= GetRouteUrl("GalleryRoute", null)%>" class="see-all-btn">See All Photos</a>
     </div>
 
     <div class="gallery-masonry" id="galleryContainer" runat="server">
