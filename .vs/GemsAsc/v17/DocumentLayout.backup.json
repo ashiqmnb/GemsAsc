@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Claysys Training\\GemsAsc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\pages\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\admin\\pages\\addfaculty.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\admin\\pages\\addfaculty.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|d:\\claysys training\\gemsasc\\gemsasc\\pages\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|D:\\Claysys Training\\GemsAsc\\gemsasc\\pages\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\pages\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|D:\\Claysys Training\\GemsAsc\\gemsasc\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{91479DA9-CB99-416F-A11A-4644FEB5372F}|GemsAsc\\GemsAsc.csproj|solutionrelative:gemsasc\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,16 +47,46 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AddFaculty.aspx.cs",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\AddFaculty.aspx.cs",
+              "RelativeDocumentMoniker": "GemsAsc\\Admin\\Pages\\AddFaculty.aspx.cs",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Admin\\Pages\\AddFaculty.aspx.cs",
+              "RelativeToolTip": "GemsAsc\\Admin\\Pages\\AddFaculty.aspx.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T11:21:39.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\packages.config",
+              "RelativeDocumentMoniker": "GemsAsc\\packages.config",
+              "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\packages.config",
+              "RelativeToolTip": "GemsAsc\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-21T10:55:56.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Login.aspx.cs",
               "DocumentMoniker": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Login.aspx.cs",
               "RelativeDocumentMoniker": "GemsAsc\\Pages\\Login.aspx.cs",
               "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Login.aspx.cs",
               "RelativeToolTip": "GemsAsc\\Pages\\Login.aspx.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAQwFMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T10:50:50.653Z",
-              "EditorCaption": ""
-            },
+              "WhenOpened": "2025-08-21T10:50:50.653Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1257,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -57,7 +95,7 @@
               "RelativeDocumentMoniker": "GemsAsc\\Pages\\Register.aspx.cs",
               "ToolTip": "D:\\Claysys Training\\GemsAsc\\GemsAsc\\Pages\\Register.aspx.cs",
               "RelativeToolTip": "GemsAsc\\Pages\\Register.aspx.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAYwHgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAYwHIAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T10:46:49.222Z",
               "EditorCaption": ""

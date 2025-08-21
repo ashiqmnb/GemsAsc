@@ -53,11 +53,15 @@ namespace GemsAsc.Admin.Pages
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            // hasing of password
+            string salt = BCrypt.Net.BCrypt.GenerateSalt();
+            string hashPassword = BCrypt.Net.BCrypt.HashPassword(txtPassword.Text, salt);
+
             var facultyDto = new AddFacultyDTO
             {
                 Name = txtName.Text,
                 Email = txtEmail.Text,
-                Password = txtPassword.Text,
+                Password = hashPassword,
                 Department = ddlDepartment.SelectedValue,
                 Designation = ddlDesignation.SelectedValue,
                 ImageUrl = ViewState["UploadedImageUrl"]?.ToString()
