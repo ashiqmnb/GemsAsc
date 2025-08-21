@@ -72,6 +72,24 @@ namespace GemsAsc.Repositories
             }
         }
 
+
+        public FacultyResDTO GetFacultyById(string id)
+        {
+            try
+            {
+                var faculty = _context.Database.SqlQuery<FacultyResDTO>(
+                        "EXEC GetFacultiesById @Id",
+                        new SqlParameter("@Id", id)
+                    ).FirstOrDefault();
+
+                return faculty;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public List<FacultyResDTO> GetFacultiesByDept(string deptName)
         {
             try

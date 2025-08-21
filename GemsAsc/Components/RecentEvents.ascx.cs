@@ -20,7 +20,9 @@ namespace GemsAsc.Components
 
         private void BindEvents()
         {
-            EventGalleryService eventGalleryService = new EventGalleryService();
+            //EventGalleryService eventGalleryService = new EventGalleryService();
+            WcfEventGalleryService.Service1Client eventGalleryService = new WcfEventGalleryService.Service1Client();
+
             var events = eventGalleryService.GetRecentEvents();
 
             rptEvents.DataSource = events;

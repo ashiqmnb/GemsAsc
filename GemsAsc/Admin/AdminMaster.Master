@@ -134,7 +134,7 @@
                 </div>
 
                 <div class="nav-menu">
-                    <a href="/" class="nav-link"><i class="fas fa-globe"></i> Home</a>
+                    <a href="../Default.aspx" class="nav-link"><i class="fas fa-globe"></i> Home</a>
                     <a href="<%= Page.GetRouteUrl("AdminDashboardRoute", null) %>" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                     <a href="<%= Page.GetRouteUrl("AdminStudentsRoute", null) %>" class="nav-link"><i class="fas fa-users"></i> Students</a>
                     <a href="<%= Page.GetRouteUrl("AdminFacultiesRoute", null) %>" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Faculties</a>

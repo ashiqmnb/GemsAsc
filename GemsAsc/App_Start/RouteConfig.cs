@@ -60,6 +60,10 @@ namespace GemsAsc
 
             //Faculty
             routes.MapPageRoute("FacultyDashboardRoute", "Faculty/Dashboard", "~/Faculty/Dashboard.aspx");
+            routes.MapPageRoute("FacultyStudentsRoute", "Faculty/Students", "~/Faculty/FacultyStudents.aspx");
+            routes.MapPageRoute("FacultyProfileRoute", "Faculty/Profile", "~/Faculty/FacultyProfile.aspx");
+            routes.MapPageRoute("FacultyDepartmentsRoute", "Faculty/Department", "~/Faculty/FacultyDepartment.aspx");
+            routes.MapPageRoute("FacultyAddStudentRoute", "Faculty/Add-Student", "~/Faculty/AddStudent.aspx");
 
         }
     }

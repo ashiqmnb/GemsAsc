@@ -184,7 +184,7 @@
         </asp:UpdatePanel>
         <div style="text-align: center; margin-top: 10px; display:flex; justify-content: space-between">
             <a href="<%= Page.GetRouteUrl("RegisterRoute", null) %>" style="font-size: 14px;">Student Register?</a>
-            <a href="/" style="font-size: 14px;">Home</a>
+            <a href="../Default.aspx" style="font-size: 14px;">Home</a>
         </div>
       </div>
     </div>

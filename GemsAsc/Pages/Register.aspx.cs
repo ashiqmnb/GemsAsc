@@ -89,10 +89,6 @@ namespace GemsAsc.Pages
                     ddlCourse.Items.Add(new ListItem("MSW"));
                     break;
 
-                case "Computer":
-                    ddlCourse.Items.Add(new ListItem("BCA"));
-                    break;
-
                 case "MultiMedia":
                     ddlCourse.Items.Add(new ListItem("BA Multimedia"));
                     break;
@@ -113,11 +109,16 @@ namespace GemsAsc.Pages
 
             AuthRepo authRepo = new AuthRepo();
 
+
+            // hasing of password
+            string salt = BCrypt.Net.BCrypt.GenerateSalt();
+            string hashPassword = BCrypt.Net.BCrypt.HashPassword(txtPassword.Text, salt);
+
             var userDto = new WcfAuthService.RegisterUserDTO
             {
                 Email = txtEmail.Text,
                 Name = txtName.Text,
-                Password = txtPassword.Text,
+                Password = hashPassword,
                 AddNo = txtAdmissionNo.Text,
                 RegNo = txtUniversityNo.Text.ToUpper(),
                 Course = ddlCourse.Text,

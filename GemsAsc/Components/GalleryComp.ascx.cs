@@ -22,7 +22,9 @@ namespace GemsAsc.Components
         private void LoadGallery()
         {
 
-            EventGalleryService eventGalleryService = new EventGalleryService();
+            //EventGalleryService eventGalleryService = new EventGalleryService();
+            WcfEventGalleryService.Service1Client eventGalleryService = new WcfEventGalleryService.Service1Client();
+
             var items = eventGalleryService.GetGalleryItemsForHome();
 
             foreach (var item in items)

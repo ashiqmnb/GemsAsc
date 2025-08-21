@@ -23,7 +23,7 @@ namespace GemsAsc.Pages
                 string email = txtEmail.Text.Trim();
                 string password = txtPassword.Text.Trim();
 
-                //AuthRepo authRepo = new AuthRepo();
+                AuthRepo authRepo = new AuthRepo();
                 //var user = authRepo.GetUserByEmail(email);
 
                 WcfAuthService.Service1Client wcfAuth = new WcfAuthService.Service1Client();
@@ -36,12 +36,20 @@ namespace GemsAsc.Pages
                     return;
                 }
 
-                if (!string.Equals(user.Password, password, StringComparison.Ordinal))
+                bool isValidPassword = BCrypt.Net.BCrypt.Verify(password, user.Password);
+                if (!isValidPassword)
                 {
                     lblMessage.Text = "Incorrect password.";
                     return;
                 }
-                if(user.IsBlocked == true)
+
+                //if (!string.Equals(user.Password, password, StringComparison.Ordinal))
+                //{
+                //    lblMessage.Text = "Incorrect password.";
+                //    return;
+                //}
+
+                if (user.IsBlocked == true)
                 {
                     lblMessage.Text = "You are blocked by admin.";
                     return;
@@ -58,7 +66,14 @@ namespace GemsAsc.Pages
                         break;
 
                     case "Faculty":
-                        Toast.ShowAndRedirect(this.Page, "Login successfull", GetRouteUrl("FacultyDashboardRoute", null), "success", 1800);
+                        UserService userService = new UserService();
+                        var faculty = userService.GetFacultyById(user.UserID);
+
+                        Session["ProfileUrl"] = faculty.ImageUrl;
+                        Session["Department"] = faculty.Department;
+                        Session["Designation"] = faculty.Designation;
+
+                        Toast.ShowAndRedirect(this.Page, "Login successfull", GetRouteUrl("FacultyProfileRoute", null), "success", 1800);
                         break;
 
                     default:

@@ -16,7 +16,8 @@ namespace GemsAsc.Pages
             {
                 string id = Page.RouteData.Values["id"] as string;
 
-                EventGalleryService eventGalleryService = new EventGalleryService();
+                //EventGalleryService eventGalleryService = new EventGalleryService();
+                WcfEventGalleryService.Service1Client eventGalleryService = new WcfEventGalleryService.Service1Client();
 
                 var ev = eventGalleryService.GetEventById(id);
 

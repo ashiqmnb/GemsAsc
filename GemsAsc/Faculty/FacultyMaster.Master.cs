@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GemsAsc.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +17,13 @@ namespace GemsAsc.Faculty
             {
                 Response.Redirect(GetRouteUrl("AccessDeniedRoute", null));
                 return;
+            }
+            else
+            {
+                imgProfile.ImageUrl = Session["ProfileUrl"].ToString();
+                lblName.Text = Session["Name"].ToString();
+                lblDesignation.Text = Session["Designation"].ToString();
+                lblDepartment.Text = $"Department of {Session["Department"].ToString()}";
             }
         }
         protected void btnLogout_Click(object sender, EventArgs e)

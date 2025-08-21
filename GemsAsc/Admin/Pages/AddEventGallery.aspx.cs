@@ -14,8 +14,9 @@ namespace GemsAsc.Admin.Pages
     public partial class AddEventGallery : System.Web.UI.Page
     {
         private readonly CloudinaryService _cloudinaryService = new CloudinaryService();
-        private readonly EventGalleryService eventGalleryService = new EventGalleryService();
 
+        //private readonly EventGalleryService eventGalleryService = new EventGalleryService();
+        private readonly WcfEventGalleryService.Service1Client eventGalleryService = new WcfEventGalleryService.Service1Client();
 
         protected void Page_Load(object sender, EventArgs e)
         {

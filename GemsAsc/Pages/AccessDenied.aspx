@@ -52,7 +52,7 @@
             <p class="error-message">
                 Sorry, you don't have permission to access this page.
             </p>
-            <a href="/" class="btn-home">Go to Home</a>
+            <a href="../Default.aspx" class="btn-home">Go to Home</a>
         </div>
 
 </asp:Content>
