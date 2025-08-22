@@ -88,7 +88,7 @@
 <div class="welcome-section">
 
     <div class="welcome-image">
-        <img src="../Assets/Images/People/principal.png" alt="Principal Image" />
+        <img src='<%= ResolveUrl("~/Assets/Images/People/principal.png") %>'  alt="Principal Image" />
         <div class="name-badge">
             <p style="margin-bottom: 0px; font-size:20px;">Dr. Naveen Mohan</p>
             <p style="margin-bottom: 0px; font-size:14px;">Principal</p>

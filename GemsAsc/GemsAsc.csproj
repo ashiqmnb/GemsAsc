@@ -276,6 +276,7 @@
     <Content Include="Assets\Images\Logo\aicte.png" />
     <Content Include="Assets\Images\Logo\gemslogo.png" />
     <Content Include="Assets\Images\Logo\naac.png" />
+    <Content Include="Assets\Images\Logo\ugc.png" />
     <Content Include="Assets\Images\People\chairman.jpg" />
     <Content Include="Assets\Images\People\directory.jpg" />
     <Content Include="Assets\Images\People\principal.png" />

@@ -62,7 +62,7 @@
         <div class="row">
             <!-- Left Column -->
             <div class="col-md-4 mb-4">
-                <img src="../Assets/Images/Logo/gemslogo.png" alt="College Logo" class="footer-logo" />
+                <img src='<%= ResolveUrl("~/Assets/Images/Logo/gemslogo.png") %>' alt="College Logo" class="footer-logo" />
                 <p style="font-size: 24px;">
                     <strong>Global Education And Management Studies (GEMS) Co-Operative Ltd.</strong>
                 </p>

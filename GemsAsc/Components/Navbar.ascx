@@ -64,13 +64,15 @@
 <!-- Top Navbar -->
 <div class="top-navbar bg-white border-bottom px-3 py-2 d-flex align-items-center justify-content-center flex-wrap gap-4">
   <div class="d-flex align-items-center">
-    <img src="../Assets/Images/Logo/gemslogo.png" alt="Gems Logo" height="100" class="me-3" />
+    <a href="/">
+        <img src='<%= ResolveUrl("~/Assets/Images/Logo/gemslogo.png") %>' alt="Gems Logo" height="100" class="me-3" />
+    </a>
     <div class="d-flex flex-column align-items-center collage-name">
       <h5 class="mb-0 fw-bold">GEMS ARTS AND SCIENCE COLLEGE</h5>
       <small class="text-muted fw-semibold">(AUTONOMOUS)</small>
     </div>
   </div>
-
+    
   <div class="d-flex align-items-center gap-4">
     <a href="https://digivista.gemsasc.ac.in/online-admission/#/sign-in"
        target="_blank"
@@ -78,10 +80,10 @@
        style="background-color: #16704C; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); text-decoration: none;">
         Admission 2025-26
     </a>
-
-    <img src="../Assets/Images/Logo/naac.png" alt="Naac Logo" width="80" class="me-2" />
-    <img src="../Assets/Images/Logo/aicte.png" alt="Aicte Logo" width="80" class="me-2" />
-    <img src="../Assets/Images/Logo/ugc.png" alt="Ugc Logo" width="80" />
+      
+    <img src='<%= ResolveUrl("~/Assets/Images/Logo/naac.png") %>'  alt="Naac Logo" width="80" class="me-2" />
+    <img src='<%= ResolveUrl("~/Assets/Images/Logo/aicte.png") %>'  alt="Aicte Logo" width="80" class="me-2" />
+    <img src='<%= ResolveUrl("~/Assets/Images/Logo/ugc.png") %>'  alt="Ugc Logo" width="80" />
   </div>
 </div>
 
@@ -90,8 +92,8 @@
 
   <div class="container-fluid px-3">
 
-      <a class="d-lg-none">
-          <img src="../Assets/Images/Logo/gemslogo.png" alt="College Logo" width="50" height="50" class="me-3" />
+      <a class="d-lg-none" href="/">
+          <img src='<%= ResolveUrl("~/Assets/Images/Logo/gemslogo.png") %>' alt="College Logo" width="50" height="50" class="me-3" />
       </a> 
 
       <div class="d-lg-none d-flex flex-column align-items-center collage-name">

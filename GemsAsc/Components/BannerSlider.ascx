@@ -79,21 +79,21 @@
 <div class="slider-container">
     <div class="slider-wrapper" id="sliderWrapper">
         <div class="slide">
-            <img src="../Assets/Images/Banner/homeimge2.webp" alt="Banner 1" />
+            <img src='<%= ResolveUrl("~/Assets/Images/Banner/homeimge2.webp") %>'  alt="Banner 1" />
             <div class="slide-caption">
                 <h2>INNOVATIVE PROGRAMMES</h2>
                 <h5>GEMS provides various innovative programmes for the students to enrich their Social Commitment & Professional Quality.</h5>
             </div>
         </div>
         <div class="slide">
-            <img src="../Assets/Images/Banner/homeimge3.webp" alt="Banner 3" />
+            <img src='<%= ResolveUrl("~/Assets/Images/Banner/homeimge3.webp") %>' alt="Banner 3" />
             <div class="slide-caption">
                 <h2>GEMS LIBRARY</h2>
                 <h5>The Library has a collection of good number of books under different titles according to the student requirements with online public access & HighSpeed Internet Facility.</h5>
             </div>
         </div>
          <div class="slide caption-div">
-             <img src="../Assets/Images/Banner/homeimge1.webp" alt="Banner 2" />
+             <img src='<%= ResolveUrl("~/Assets/Images/Banner/homeimge1.webp") %>' alt="Banner 2" />
          </div>
     </div>
 </div>
